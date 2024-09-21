@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="WDD 231 Home Page by Anton Gorokhov">
-    <meta name="author" content="Anton Gorokhov">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WDD 231 Home Page by Anton Gorokhov" />
+    <meta name="author" content="Anton Gorokhov" />
 
-    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/home-page.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/get-date.js" defer></script>
 
-    <title>WDD 231 - Web Frontend Development I - Anton Gorokhov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>WDD 231 - Course Home Page - Anton Gorokhov</title>
   </head>
-  <body> 
+  <body>
     <header>
-      <h1>WDD 231 - Web Frontend Development I - Anton Gorokhov</h1>
+      <picture class="picture">
+        <img src="images/home-page-photo.webp" alt="anton-photo" width="80" />
+      </picture>
+      <h1>Anton Gorokhov</h1>
     </header>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="">Chamber</a>
+      <a href="https://github.com/Bonduelle85">GitHub Profile</a>
+      <a href="https://www.linkedin.com/in/anton-gorokhov">LinkedIn</a>
+    </nav>
+    <main>
+      <div class="cards">
+        <section class="card card-work">
+          <h2>Course Work</h2>
+          <ul id="course-work-list">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section class="card card-location">
+          <h2>Moscow, Russia</h2>
+          <picture class="picture">
+            <source srcset="images/moscow.webp" media="(min-width: 800px)" />
+            <source srcset="images/moscow.webp" media="(max-width: 799px)" />
+            <img src="images/moscow.webp" alt="cathedral-photo" />
+          </picture>
+          <p>St. Basil's Cathedral</p>
+        </section>
+      </div>
+      <section class="card card-courses">
+        <h2>Web and Computer Programming Certificate</h2>
+        <nav class="courses-nav">
+          <a id="all">All</a>
+          <a id="cse">CSE</a>
+          <a id="wdd">WDD</a>
+        </nav>
+        <hr />
+        <div class="course-items">
+          <div class="course-item">CSE 110</div>
+          <div class="course-item">WDD 130</div>
+          <div class="course-item">CSE 111</div>
+          <div class="course-item">CSE 210</div>
+          <div class="course-item">WDD 131</div>
+          <div class="course-item">WDD 231</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span id="current-year"></span>&#128039; Anton Gorokhov &#128039; Russia
+        <img class="russian-flag" src="images/ru.svg" height="25" alt="russian flag">
+      </p>
+      <p id="last-modified"></p>
+    </footer>
   </body>
 </html>
