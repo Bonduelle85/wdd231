@@ -54,13 +54,13 @@ header {
 .span3 {
   transform: translateY(10px);
 }
- #menu.open .span1 {
+#menu.open .span1 {
   transform: translateY(0) rotate(-45deg);
 }
- #menu.open .span2 {
+#menu.open .span2 {
   transform: scale(0);
 }
- #menu.open .span3 {
+#menu.open .span3 {
   transform: translateY(0) rotate(45deg);
 }
 
@@ -158,6 +158,9 @@ footer {
   h1 {
     font-size: 1.5rem;
   }
+  .card {
+    box-shadow: none;
+  }
   .cards {
     display: flex;
     flex-direction: column;
@@ -184,7 +187,7 @@ footer {
     display: flex;
     font-size: 1.3rem;
   }
- 
+
   #menu {
     display: block;
   }
