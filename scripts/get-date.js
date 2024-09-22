@@ -125,3 +125,8 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
+// initial state - all
+setCourseItemsBackgroundInitial();
+document.querySelectorAll(".course-item").forEach((item) => {
+  setCourseItemsBackground(item);
+});
