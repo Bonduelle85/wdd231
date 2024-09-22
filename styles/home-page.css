@@ -31,19 +31,37 @@ header {
 /* Burger */
 #menu {
   display: none;
-  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
   border: 0;
   background: none;
   color: var(--black);
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 1.2rem;
 }
-#menu::before {
-  content: "☰";
+#menu span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--black);
+  left: 5px;
+  transition: transform 0.5s, opacity 0.1s;
 }
-#menu.open::before {
-  content: "X";
+.span1 {
+  transform: translateY(-10px);
+}
+.span3 {
+  transform: translateY(10px);
+}
+ #menu.open .span1 {
+  transform: translateY(0) rotate(-45deg);
+}
+ #menu.open .span2 {
+  transform: scale(0);
+}
+ #menu.open .span3 {
+  transform: translateY(0) rotate(45deg);
 }
 
 picture {
@@ -164,9 +182,9 @@ footer {
   }
   .main-nav.open {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    font-size: 1.3rem;
   }
+ 
   #menu {
     display: block;
   }
