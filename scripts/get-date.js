@@ -112,3 +112,13 @@ document.querySelector(
 document.querySelector(
   "#last-modified"
 ).innerHTML = `Last Update: ${document.lastModified}`;
+
+// Burger
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".main-nav");
+
+hamButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  hamButton.classList.toggle("open");
+});
+

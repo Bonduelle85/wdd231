@@ -31,6 +31,26 @@ header {
   align-items: center;
 }
 
+/* Burger */
+#menu {
+  display: none;
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: var(--black);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
 picture {
   margin-inline: 20px;
 }
@@ -38,9 +58,6 @@ picture {
 picture img {
   box-shadow: 2px 2px 10px var(--black);
   border-radius: 5px;
-}
-#menu {
-  display: none;
 }
 .main-nav {
   display: flex;
@@ -50,9 +67,11 @@ picture img {
 }
 .main-nav a {
   color: var(--white);
+  text-decoration: none;
 }
 .main-nav a:hover {
   color: var(--nav-hover);
+  font-weight: 600;
 }
 .cards {
   display: flex;
@@ -122,6 +141,7 @@ footer {
   margin-bottom: -0.25rem;
 }
 
+
 @media (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
@@ -138,14 +158,22 @@ footer {
     width: 100%;
     margin-top: 1%;
   }
-  .course-items{
+  .course-items {
     display: flex;
     flex-direction: column;
   }
-
+  /* Burger */
   .main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main-nav.open {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  #menu {
+    display: block;
   }
 }
