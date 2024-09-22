@@ -68,10 +68,13 @@ const courses = [
 ];
 
 let completedCourses = courses.filter((course) => course.completed);
-let totalCredits = completedCourses.reduce((sum, course) => sum + course.credits,0);
 let completedCoursesContentList = completedCourses.map((course) => `${course.subject} ${course.number}`);
 
-// Buttons and EventListeners for Heroes Page
+// Total number of credits required
+let totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+document.querySelector("#credits-required").innerHTML = totalCredits;
+
+// Buttons and EventListeners
 document.querySelector("#all").addEventListener("click", () => {
   setCourseItemsBackgroundInitial();
   document.querySelectorAll(".course-item").forEach((item) => {

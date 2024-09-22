@@ -11,18 +11,15 @@
 html {
   height: 100%;
 }
-
 body {
   font-family: "Inclusive Sans", Helvetica, sans-serif;
   color: var(--black);
   text-align: center;
   min-height: 100%;
 }
-
 main {
   padding: 1%;
 }
-
 header {
   display: flex;
   background-color: var(--light-blue);
@@ -42,11 +39,9 @@ header {
   top: 1rem;
   right: 1rem;
 }
-
 #menu::before {
   content: "☰";
 }
-
 #menu.open::before {
   content: "X";
 }
@@ -54,11 +49,11 @@ header {
 picture {
   margin-inline: 20px;
 }
-
 picture img {
   box-shadow: 2px 2px 10px var(--black);
   border-radius: 5px;
 }
+
 .main-nav {
   display: flex;
   background-color: var(--nav-color);
@@ -73,6 +68,7 @@ picture img {
   color: var(--nav-hover);
   font-weight: 600;
 }
+
 .cards {
   display: flex;
   gap: 1%;
@@ -90,13 +86,13 @@ picture img {
 .card-courses {
   margin-top: 1%;
 }
-
 h2 {
   background-color: var(--light-blue);
   padding: 10px;
   margin-top: 0;
   border-radius: 5px 5px 0 0;
 }
+
 .courses-nav {
   display: flex;
   padding: 20px;
@@ -115,7 +111,6 @@ h2 {
 .courses-nav a:hover {
   color: var(--nav-hover);
 }
-
 .course-items {
   display: flex;
   flex-wrap: wrap;
@@ -141,8 +136,7 @@ footer {
   margin-bottom: -0.25rem;
 }
 
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 1.5rem;
   }
