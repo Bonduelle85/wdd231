@@ -5,7 +5,8 @@
   --nav-hover: rgb(232, 206, 57);
   --blue: rgb(0, 66, 120);
   --black: rgb(0, 0, 0);
-  --brown: rgb(165, 42, 42);
+  --completed-color: rgb(165, 42, 42);
+  --uncompleted-color: rgb(61, 58, 83);
 }
 
 html {
@@ -137,7 +138,7 @@ h2 {
   padding: 1%;
 }
 .course-item {
-  background-color: var(--brown);
+  background-color: var(--completed-color);
   border-radius: 5px;
   color: var(--white);
   padding: 18px;

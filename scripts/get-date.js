@@ -67,6 +67,7 @@ const courses = [
   },
 ];
 
+const root = document.querySelector(":root");
 let completedCourses = courses.filter((course) => course.completed);
 let completedCoursesContentList = completedCourses.map((course) => `${course.subject} ${course.number}`);
 
@@ -98,14 +99,21 @@ document.querySelector("#wdd").addEventListener("click", () => {
 
 function setCourseItemsBackgroundInitial() {
   document.querySelectorAll(".course-item").forEach((item) => {
-    item.style.backgroundColor = "gray";
+    let color = getComputedStyle(root)
+      .getPropertyValue("--uncompleted-color")
+      .trim();
+    item.style.backgroundColor = color;
   });
 }
 
 function setCourseItemsBackground(item) {
   let content = item.textContent;
+  let color = getComputedStyle(root)
+    .getPropertyValue("--completed-color")
+    .trim();
   if (completedCoursesContentList.includes(content))
-    item.style.backgroundColor = "brown";
+    
+    item.style.backgroundColor = color;
 }
 
 // Footer
