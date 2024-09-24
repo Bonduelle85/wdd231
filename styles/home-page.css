@@ -64,6 +64,9 @@ header {
 #menu.open .span3 {
   transform: translateY(0) rotate(45deg);
 }
+.active::before { 
+	content: "📍";
+}
 
 picture {
   margin-inline: 20px;
