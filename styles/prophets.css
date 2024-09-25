@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+main {
+  margin: 1rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px 20px;
+}
+
+.card {
+  background-color: rgb(121, 150, 204);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.birthdate,
+.birthplace {
+  font-size: 14px;
+}
+
+.active::before { 
+	content: "📍";
+}

@@ -64,8 +64,8 @@ header {
 #menu.open .span3 {
   transform: translateY(0) rotate(45deg);
 }
-.active::before { 
-	content: "📍";
+.active::before {
+  content: "📍";
 }
 
 picture {
@@ -101,6 +101,10 @@ picture img {
 }
 .card-work {
   width: 60%;
+  text-align: start;
+}
+#course-work-list a {
+  text-decoration: none;
 }
 .card-location {
   width: 40%;
