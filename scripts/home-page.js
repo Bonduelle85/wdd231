@@ -125,8 +125,8 @@ document.querySelector(
 ).innerHTML = `Last Update: ${document.lastModified}`;
 
 // Burger
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".main-nav");
+const hamButton = document.querySelector("#menu-button");
+const navigation = document.querySelector("#animation");
 
 hamButton.addEventListener("click", () => {
   navigation.classList.toggle("open");

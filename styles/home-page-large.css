@@ -30,10 +30,10 @@ header {
 }
 
 /* Burger */
-#menu {
+#menu-button {
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 0;
   background: none;
   color: var(--black);
@@ -41,7 +41,7 @@ header {
   top: 1rem;
   right: 1.2rem;
 }
-#menu span {
+#menu-button span {
   position: absolute;
   width: 30px;
   height: 3px;
@@ -55,17 +55,33 @@ header {
 .span3 {
   transform: translateY(10px);
 }
-#menu.open .span1 {
+#menu-button.open .span1 {
   transform: translateY(0) rotate(-45deg);
 }
-#menu.open .span2 {
+#menu-button.open .span2 {
   transform: scale(0);
 }
-#menu.open .span3 {
+#menu-button.open .span3 {
   transform: translateY(0) rotate(45deg);
 }
-.active::before {
-  content: "📍";
+li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+.main-nav, .main-nav.open {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-color);
+  list-style-type: none;
+  margin: 0px;
+  padding: 16px;
+}
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: var(--nav-hover);
 }
 
 picture {
@@ -74,21 +90,6 @@ picture {
 picture img {
   box-shadow: 2px 2px 10px var(--black);
   border-radius: 5px;
-}
-
-.main-nav {
-  display: flex;
-  background-color: var(--nav-color);
-  padding: 16px;
-  justify-content: space-around;
-}
-.main-nav a {
-  color: var(--white);
-  text-decoration: none;
-}
-.main-nav a:hover {
-  color: var(--nav-hover);
-  font-weight: 600;
 }
 
 .cards {
@@ -160,43 +161,4 @@ footer {
 }
 .russian-flag {
   margin-bottom: -0.25rem;
-}
-
-@media (max-width: 800px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  .card {
-    box-shadow: none;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-work {
-    width: 100%;
-    margin-top: 1%;
-  }
-  .card-location {
-    width: 100%;
-    margin-top: 1%;
-  }
-  .course-items {
-    display: flex;
-    flex-direction: column;
-  }
-  /* Burger */
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .main-nav.open {
-    display: flex;
-    font-size: 1.3rem;
-  }
-
-  #menu {
-    display: block;
-  }
 }

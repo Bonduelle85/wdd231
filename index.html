@@ -7,9 +7,10 @@
     <meta name="author" content="Anton Gorokhov" >
 
     <link href="styles/normalize.css" rel="stylesheet" >
-    <link href="styles/home-page.css" rel="stylesheet" >
+    <link href="styles/home-page-large.css" rel="stylesheet" >
+    <link href="styles/home-page-small.css" rel="stylesheet" >
 
-    <script src="scripts/get-date.js" defer></script>
+    <script src="scripts/home-page.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
@@ -42,20 +43,19 @@
         <img src="images/home-page-photo.webp" alt="anton-photo" width="80" >
       </picture>
       <h1>Anton Gorokhov</h1>
-      <button id="menu" aria-label="open menu">
-        <span class="span span1"></span><span class="span span2"></span
-        ><span class="span span3"></span>
+      <button id="menu-button" aria-label="open menu">
+        <span class="span span1"></span>
+        <span class="span span2"></span>
+        <span class="span span3"></span>
       </button>
     </header>
-    <nav class="main-nav">
-      <a href="index.html" title="Home" class="active">Home</a>
-      <a href="" title="Chamber">Chamber</a>
-      <a href="https://github.com/Bonduelle85" title="GitHub Profile"
-        >GitHub Profile</a
-      >
-      <a href="https://www.linkedin.com/in/anton-gorokhov" title="LinkedIn"
-        >LinkedIn</a
-      >
+    <nav id="animation">
+      <ul class="main-nav">
+        <li><a href="index.html" title="Home" class="active">Home</a></li>
+        <li><a href="" title="Chamber">Chamber</a></li>
+        <li><a href="https://github.com/Bonduelle85" title="GitHub Profile">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/anton-gorokhov" title="LinkedIn">LinkedIn</a></li>
+      </ul>
     </nav>
     <main>
       <div class="cards">
