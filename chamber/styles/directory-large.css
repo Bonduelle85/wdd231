@@ -1,0 +1,20 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --light-blue: rgb(160, 185, 238);
+  --nav-color: rgb(62, 78, 105);
+  --nav-hover: rgb(232, 206, 57);
+  --blue: rgb(0, 66, 120);
+  --black: rgb(0, 0, 0);
+  --completed-color: rgb(165, 42, 42);
+  --uncompleted-color: rgb(61, 58, 83);
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: var(--black);
+  text-align: center;
+  min-height: 100%;
+}
