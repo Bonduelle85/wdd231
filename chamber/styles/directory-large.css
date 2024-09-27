@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-inline: 5%;
-  padding-top: 5%;
+  padding-top: 50px;
   background-color: var(--nav-color);
   align-items: end;
 }
@@ -90,4 +90,18 @@ p {
 }
 #menu-button.open .span3 {
   transform: translateY(0) rotate(45deg);
+}
+
+/* Hero */
+.hero-img-container img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+padding-block: 16px;
+  justify-content: space-around;
 }
