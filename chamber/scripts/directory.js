@@ -7,6 +7,7 @@ async function getMembersData(view = "grid") {
   let data = await response.json();
   let members = data.members;
 
+  console.log(members);
   switch (view) {
     case "grid":
       displayMembersGrid(members);
@@ -18,5 +19,4 @@ async function getMembersData(view = "grid") {
       break;
   }
 
-  console.log(members);
 }
