@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Company A",
+    "address": "123 Main St, Cityville, ST 12345",
+    "phone_number": "+1-555-0101",
+    "website": "https://companya.com",
+    "image": "companya_logo.png",
+    "membership_level": 1
+  },
+  {
+    "name": "Company B",
+    "address": "456 Elm St, Townsville, ST 67890",
+    "phone_number": "+1-555-0201",
+    "website": "https://companyb.com",
+    "image": "companyb_logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Company C",
+    "address": "789 Oak St, Villagetown, ST 11121",
+    "phone_number": "+1-555-0301",
+    "website": "https://companyc.com",
+    "image": "companyc_logo.png",
+    "membership_level": 3
+  },
+  {
+    "name": "Company D",
+    "address": "101 Pine St, Cityplace, ST 22232",
+    "phone_number": "+1-555-0401",
+    "website": "https://companyd.com",
+    "image": "companyd_logo.png",
+    "membership_level": 1
+  },
+  {
+    "name": "Company E",
+    "address": "202 Maple St, Metropolis, ST 33343",
+    "phone_number": "+1-555-0501",
+    "website": "https://companye.com",
+    "image": "companye_logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Company F",
+    "address": "303 Cedar St, Capitalcity, ST 44454",
+    "phone_number": "+1-555-0601",
+    "website": "https://companyf.com",
+    "image": "companyf_logo.png",
+    "membership_level": 3
+  },
+  {
+    "name": "Company G",
+    "address": "404 Birch St, Newtown, ST 55565",
+    "phone_number": "+1-555-0701",
+    "website": "https://companyg.com",
+    "image": "companyg_logo.png",
+    "membership_level": 2
+  }
+]
