@@ -1,13 +1,12 @@
 const url = "https://bonduelle85.github.io/wdd231/chamber/data/members.json";
 
-let members = document.querySelector("#business-members");
+const memberCards = document.querySelector("article");
 
 async function getMembersData() {
   let response = await fetch(url);
   let data = await response.json();
   let members = data.members;
 
-  console.log(members);
   displayBusinessMembers(members);
 }
 
@@ -21,7 +20,7 @@ const displayBusinessMembers = (members) => {
 
     let membershipLevel = document.createElement("p");
     membershipLevel.classList.add("membership-level");
-    membershipLevel.textContent = `Membership: ${member.membership_level}`;
+    membershipLevel.textContent = `Mship: ${member.membership_level}`;
 
     let line = document.createElement("hr");
 
@@ -33,20 +32,20 @@ const displayBusinessMembers = (members) => {
     portrait.setAttribute("src", member.image);
     portrait.setAttribute("alt", `Portrait of the ${member}`);
     portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "140");
-    portrait.setAttribute("height", "140");
+    portrait.setAttribute("width", "50");
+    portrait.setAttribute("height", "50");
 
     let email = document.createElement("p");
     email.classList.add("member-email");
-    email.textContent = `Email: ${member.email}`;
+    email.textContent = `${member.email}`;
 
     let phone = document.createElement("p");
     phone.classList.add("member-phone");
-    phone.textContent = `Phone: ${member.phone_number}`;
+    phone.textContent = `${member.phone_number}`;
 
     let url = document.createElement("p");
     url.classList.add("membership-url");
-    url.textContent = `URL: ${member.website}`;
+    url.textContent = `${member.website}`;
 
     let infoContainer = document.createElement("div");
     infoContainer.classList.add("info-container");
@@ -63,8 +62,31 @@ const displayBusinessMembers = (members) => {
     card.appendChild(line);
     card.appendChild(portraitInfoContainer);
 
-    cards.appendChild(card);
+    memberCards.appendChild(card);
   });
 };
 
+// Display type
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+  memberCards.classList.add("grid");
+  memberCards.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+  memberCards.classList.add("list");
+  memberCards.classList.remove("grid");
+});
+
+// Footer
+document.querySelector(
+  "#current-year"
+).innerHTML = `&copy ${new Date().getFullYear()}`;
+document.querySelector(
+  "#last-modified"
+).innerHTML = `Last Update: ${document.lastModified}`;
+
+// init
 getMembersData();
