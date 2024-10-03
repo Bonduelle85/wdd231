@@ -2,7 +2,7 @@
   --white: rgb(255, 255, 255);
   --light-blue: rgb(160, 185, 238);
   --nav-color: rgb(141, 153, 173);
-  --nav-hover: rgb(232, 206, 57);
+  --current-nav-item: rgba(255, 255, 255, 0.2);
   --blue: rgb(0, 66, 120);
   --black: rgb(0, 0, 0);
   --card-border-color: rgb(109, 109, 109);
@@ -53,6 +53,10 @@ p {
   padding-inline: 20px;
   text-decoration: none;
   color: var(--black);
+}
+.active {
+  background-color: var(--current-nav-item);
+  border-radius: 40%;
 }
 
 /* Burger */

@@ -66,6 +66,15 @@ const displayBusinessMembers = (members) => {
   });
 };
 
+// Burger
+const hamButton = document.querySelector("#menu-button");
+const navigation = document.querySelector("#animation");
+
+hamButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  hamButton.classList.toggle("open");
+});
+
 // Display type
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
