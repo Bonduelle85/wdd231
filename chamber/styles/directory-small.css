@@ -1,9 +1,12 @@
-@media (max-width: 800px) {
-  
+@media (max-width: 900px) {
+  header {
+    justify-content: space-around;
+  }
 
   /* Burger */
   #menu-button {
     display: block;
+    position: absolute;
   }
   .main-nav {
     flex-direction: column;
@@ -14,7 +17,7 @@
   }
   ul.main-nav {
     padding: 0px;
-  } 
+  }
   nav {
     display: grid;
     grid-template-rows: 0fr;
@@ -25,5 +28,33 @@
   }
   nav.open {
     grid-template-rows: 1fr;
+  }
+
+  /* Events and Weather */
+  .cards {
+    display: block;
+    gap: 1%;
+    margin: 0 16px 0 16px;
+  }
+  .card {
+    box-shadow: none;
+    margin-bottom: 8px;
+    border: 1px solid var(--card-border-color);
+  }
+  /* Business Members */
+  .display-menu {
+    display: none;
+  }
+  .grid,
+  .list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+  }
+  /* Footer */
+  footer {
+    display: block;
+  }
+  .social {
+    margin: 16px 0 16px 0;
   }
 }

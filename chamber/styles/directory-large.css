@@ -5,8 +5,7 @@
   --nav-hover: rgb(232, 206, 57);
   --blue: rgb(0, 66, 120);
   --black: rgb(0, 0, 0);
-  --completed-color: rgb(165, 42, 42);
-  --uncompleted-color: rgb(61, 58, 83);
+  --card-border-color: rgb(109, 109, 109);
 }
 
 html {
@@ -65,7 +64,7 @@ p {
   background: none;
   color: var(--black);
   position: absolute;
-  top: 1rem;
+  top: 3.4rem;
   right: 1.2rem;
 }
 #menu-button span {
