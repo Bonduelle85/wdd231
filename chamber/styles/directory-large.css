@@ -30,8 +30,11 @@ header {
   display: flex;
   align-items: center;
 }
-h1,
 p {
+  margin: 0;
+}
+#header-h1,
+#header-p {
   margin: 0;
   margin-inline-start: 16px;
 }
@@ -131,6 +134,14 @@ p {
 .info-weather-forecast {
   display: block;
 }
+#current-temp p,
+#current-desc,
+#temp-max p,
+#temp-min p,
+#sunrise,
+#sunset {
+  text-align: start;
+}
 
 /* Business Members */
 .display-menu {
@@ -140,10 +151,10 @@ article {
   padding: 20px;
 }
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 25px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 25px;
+  align-items: center;
 }
 .grid .member-card {
   box-shadow: 2px 2px 10px var(--black);
@@ -151,21 +162,21 @@ article {
   padding-bottom: 16px;
 }
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .list section div img {
-	display: none;
+  display: none;
 }
 .list section {
-	display: flex;
+  display: flex;
   justify-content: space-around;
 }
 .list hr {
-	display: none;
+  display: none;
 }
 .list > section:nth-child(even) {
-  background-color: var(--light-blue); 
+  background-color: var(--light-blue);
 }
 .list p {
   align-content: center;
@@ -173,11 +184,9 @@ article {
 .list .member-card h3,
 .list .member-card p,
 .list .member-card div {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 }
-
-
 
 /* Footer */
 footer {
