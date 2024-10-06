@@ -8,11 +8,17 @@ async function getMembersData() {
   let data = await response.json();
   let members = data.members;
 
-  displayBusinessMembers(members);
+  displayPremiumBusinessMembers(members);
 }
 
-const displayBusinessMembers = (members) => {
-  members.forEach((member) => {
+const displayPremiumBusinessMembers = (members) => {
+  let goldSilverMembers = members.filter(
+    (member) =>
+      member.membership_level === "gold" || member.membership_level === "silver"
+  );
+  let randomMembers = getRandomElements(goldSilverMembers, 3);
+
+  randomMembers.forEach((member) => {
     memberCards.innerHTML += `
     <section class="member-card">
         <h3>${member.name}</h3>
@@ -29,6 +35,10 @@ const displayBusinessMembers = (members) => {
     </section>`;
   });
 };
+function getRandomElements(arr, num) {
+  const shuffled = arr.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, num);
+}
 
 // Burger
 const hamButton = document.querySelector("#menu-button");
