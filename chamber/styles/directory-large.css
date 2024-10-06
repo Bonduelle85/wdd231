@@ -5,7 +5,8 @@
   --current-nav-item: rgba(255, 255, 255, 0.2);
   --blue: rgb(0, 66, 120);
   --black: rgb(0, 0, 0);
-  --card-border-color: rgb(109, 109, 109);
+  --card-border: rgb(109, 109, 109);
+  --icon-background: rgba(207, 207, 207, 0.9);
 }
 
 html {
@@ -141,6 +142,11 @@ p {
 #sunrise,
 #sunset {
   text-align: start;
+}
+#weather-icon {
+  background-color: var(--icon-background);
+  border-radius: 25px;
+  align-self: center;
 }
 
 /* Business Members */

@@ -39,7 +39,7 @@
   .card {
     box-shadow: none;
     margin-bottom: 8px;
-    border: 1px solid var(--card-border-color);
+    border: 1px solid var(--card-border);
   }
   /* Business Members */
   .display-menu {

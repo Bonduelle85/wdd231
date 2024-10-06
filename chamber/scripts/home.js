@@ -29,7 +29,7 @@ const displayPremiumBusinessMembers = (members) => {
             <div class="info-container">
                 <p class="member-email">${member.email}</p>
                 <p class="member-phone">${member.phone_number}</p>
-                <a href="${member.website}" title="event" class="membership-url active">${member.website}</a>
+                <a href="${member.website}" title="event" class="membership-url">${member.website}</a>
             </div>
         </div>
     </section>`;
