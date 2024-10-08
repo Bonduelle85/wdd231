@@ -2,7 +2,7 @@
   --white: rgb(255, 255, 255);
   --light-blue: rgb(160, 185, 238);
   --nav-color: rgb(62, 78, 105);
-  --nav-hover: rgb(232, 206, 57);
+  --nav-hover: rgb(218, 205, 132);
   --blue: rgb(0, 66, 120);
   --black: rgb(0, 0, 0);
   --completed-color: rgb(165, 42, 42);
@@ -68,6 +68,7 @@ header {
 li a.active {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
+  border-radius: 5px;
 }
 .main-nav, .main-nav.open {
   display: flex;
@@ -136,7 +137,9 @@ h2 {
   min-width: 15%;
   cursor: pointer;
 }
-.courses-nav a:hover {
+.courses-nav a:hover,
+.course-item:hover
+{
   color: var(--nav-hover);
 }
 .course-items {
@@ -153,7 +156,40 @@ h2 {
   padding: 18px;
   flex: 0 0 25%;
   font-size: 1.1rem;
+  cursor: pointer;
 }
+/* Dialog */
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+:modal {
+  border: 2px solid var(--blue);
+  border-radius: 15px;
+  max-width: 50vh;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+}
+:modal #dialog-number{
+  background-color: var(--nav-color);
+  padding-block: 10px;
+  color: var(--white);
+}
+:modal #dialog-desc{
+  text-align: justify;
+}
+
+:modal #dialog-cert,
+:modal #dialog-tech {
+  text-align: left;
+}
+#dialog-close {
+  position: absolute;
+  top: 50px;
+  right: 28px;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Footer */
 footer {

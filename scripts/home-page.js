@@ -69,7 +69,9 @@ const courses = [
 
 const root = document.querySelector(":root");
 let completedCourses = courses.filter((course) => course.completed);
-let completedCoursesContentList = completedCourses.map((course) => `${course.subject} ${course.number}`);
+let completedCoursesContentList = completedCourses.map(
+  (course) => `${course.subject} ${course.number}`
+);
 
 // Total number of credits required
 let totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
@@ -112,7 +114,6 @@ function setCourseItemsBackground(item) {
     .getPropertyValue("--completed-color")
     .trim();
   if (completedCoursesContentList.includes(content))
-    
     item.style.backgroundColor = color;
 }
 
@@ -132,6 +133,44 @@ hamButton.addEventListener("click", () => {
   navigation.classList.toggle("open");
   hamButton.classList.toggle("open");
 });
+
+// Dialog
+const courseDialog = document.querySelector("#course-dialog");
+const closeDialogButton = document.querySelector("#dialog-close");
+closeDialogButton.addEventListener("click", () => {
+  courseDialog.close();
+});
+
+document.querySelectorAll(".course-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    let courseName = item.textContent;
+    let [subject, number] = courseName.split(" ");
+    let course = courses.find(
+      (course) =>
+        course.subject === subject && course.number.toString() === number
+    );
+    console.log(course);
+    initCourseDialog(course);
+    courseDialog.showModal();
+  });
+});
+
+function initCourseDialog(course) {
+  document.querySelector(
+    "#dialog-number"
+  ).innerHTML = `${course.subject} ${course.number}`;
+  document.querySelector("#dialog-title").innerHTML = `${course.title}`;
+  document.querySelector(
+    "#dialog-credits"
+  ).innerHTML = `${course.credits} credits`;
+  document.querySelector(
+    "#dialog-cert"
+  ).innerHTML = `<b>Certificate</b>: ${course.certificate}`;
+  document.querySelector("#dialog-desc").innerHTML = `${course.description}`;
+  document.querySelector(
+    "#dialog-tech"
+  ).innerHTML = `<b>Technology</b>: ${course.technology}`;
+}
 
 // initial state - all
 setCourseItemsBackgroundInitial();
