@@ -136,10 +136,6 @@ hamButton.addEventListener("click", () => {
 
 // Dialog
 const courseDialog = document.querySelector("#course-dialog");
-const closeDialogButton = document.querySelector("#dialog-close");
-closeDialogButton.addEventListener("click", () => {
-  courseDialog.close();
-});
 
 document.querySelectorAll(".course-item").forEach((item) => {
   item.addEventListener("click", () => {
@@ -149,27 +145,25 @@ document.querySelectorAll(".course-item").forEach((item) => {
       (course) =>
         course.subject === subject && course.number.toString() === number
     );
-    console.log(course);
-    initCourseDialog(course);
-    courseDialog.showModal();
+    showCourseDialog(course);
   });
 });
 
-function initCourseDialog(course) {
-  document.querySelector(
-    "#dialog-number"
-  ).innerHTML = `${course.subject} ${course.number}`;
-  document.querySelector("#dialog-title").innerHTML = `${course.title}`;
-  document.querySelector(
-    "#dialog-credits"
-  ).innerHTML = `${course.credits} credits`;
-  document.querySelector(
-    "#dialog-cert"
-  ).innerHTML = `<b>Certificate</b>: ${course.certificate}`;
-  document.querySelector("#dialog-desc").innerHTML = `${course.description}`;
-  document.querySelector(
-    "#dialog-tech"
-  ).innerHTML = `<b>Technology</b>: ${course.technology}`;
+function showCourseDialog(course) {
+  courseDialog.innerHTML = `
+    <h3 id="dialog-number">${course.subject} ${course.number}</h3>
+    <h4 id="dialog-title">${course.title}</h4>
+    <p id="dialog-credits">${course.credits} credits</p>
+    <p id="dialog-cert"><b>Certificate</b>: ${course.certificate}</p>
+    <p id="dialog-desc">${course.description}</p>
+    <p id="dialog-tech"><b>Technology</b>: ${course.technology}</p>
+    <button id="dialog-close" type="reset">&#10060;</button>
+  `;
+  let closeDialogButton = document.querySelector("#dialog-close");
+  closeDialogButton.addEventListener("click", () => {
+    courseDialog.close();
+  });
+  courseDialog.showModal();
 }
 
 // initial state - all
