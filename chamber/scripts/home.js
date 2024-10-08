@@ -1,7 +1,7 @@
 const membersUrl =
   "https://bonduelle85.github.io/wdd231/chamber/data/members.json";
 
-const memberCards = document.querySelector("article");
+const memberCards = document.querySelector(".members");
 
 async function getMembersData() {
   let response = await fetch(membersUrl);
