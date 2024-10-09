@@ -1,0 +1,30 @@
+
+h1 {
+    display: inline;
+    color: #6ab174;
+    font-size: 9vw;
+    position: relative;
+    background-color: black;
+}
+
+h1::before {
+    content: attr(data-text);
+    width: 0;
+    height: 100%;
+    color: #c56b6b;
+    overflow: hidden;
+    position: absolute;
+    top: 1;
+    left: 0;
+    animation: animate 5s linear infinite;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
