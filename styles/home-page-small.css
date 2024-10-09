@@ -6,7 +6,13 @@
     align-items: end;
   }
   h1 {
+    color: var(--black);
     font-size: 1.5rem;
+    align-self: center;
+  }
+  h1::before {
+    animation: none;
+    border: none;
   }
   .card {
     box-shadow: none;
@@ -40,7 +46,7 @@
   }
   ul.main-nav {
     padding: 0px;
-  } 
+  }
   nav {
     display: grid;
     grid-template-rows: 0fr;
