@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Moscow Chamber of Commerce Home Page" />
+    <title>Moscow Chamber of Commerce</title>
+    <meta name="author" content="Anton Gorokhov" />
+
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/directory-large.css" rel="stylesheet" />
+    <link href="styles/directory-small.css" rel="stylesheet" />
+
+    <script src="scripts/thankyou.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://bonduelle85.github.io/wdd231/icon-144x144.ico"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Moscow Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://bonduelle85.github.io/wdd231/chamber/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://bonduelle85.github.io/wdd231/chamber/images/moskva-sity.webp"
+    />
+    <meta
+      property="og:description"
+      content="Moscow Chamber of Commerce website"
+    />
+    <meta
+      property="og:logo"
+      content="https://bonduelle85.github.io/wdd231/chamber/android-chrome-512x512.png"
+    />
+
+    <meta name="twitter:title" content="Moscow Chamber of Commerce" />
+    <meta
+      name="twitter:description"
+      content="Moscow Chamber of Commerce website"
+    />
+    <meta
+      name="twitter:image"
+      content="https://bonduelle85.github.io/wdd231/chamber/images/moskva-sity.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title-container">
+        <picture class="logo">
+          <img src="images/logo.webp" alt="chamber logo" width="80" />
+        </picture>
+        <div class="header-title">
+          <h1 id="header-h1">Moscow</h1>
+          <p id="header-p">Chamber of Moscow</p>
+        </div>
+      </div>
+      <img
+        class="day-night"
+        src="images/day-night.png"
+        loading="lazy"
+        alt="Night mode "
+        title="Night mode "
+        width="64"
+        height="64"
+      />
+      <button id="menu-button" aria-label="open menu">
+        <span class="span span1"></span>
+        <span class="span span2"></span>
+        <span class="span span3"></span>
+      </button>
+    </header>
+
+    <nav id="animation">
+      <ul class="main-nav">
+        <li><a href="" title="Empty"></a></li>
+        <li>
+          <a
+            href="https://bonduelle85.github.io/wdd231/chamber/index.html"
+            title="Home"
+            class="active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bonduelle85.github.io/wdd231/chamber/directory.html"
+            title="Directory"
+            >Directory</a
+          >
+        </li>
+        <li><a href="" title="Join">Join</a></li>
+        <li><a href="" title="Discover">Discover</a></li>
+        <li><a href="" title="Empty"></a></li>
+        <li><a href="" title="Empty"></a></li>
+      </ul>
+    </nav>
+
+    <h1>Thank You</h1>
+    <main class="container">
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <div class="adress">
+        <p><b>Moscow Chamber of Commerce</b></p>
+        <p>Russia, Moscow</p>
+        <p>Revolicii street 48b</p>
+        <p>info@moscow.org</p>
+        <p>(222) 555-2300</p>
+      </div>
+      <div class="social">
+        <img src="images/instagram.svg" alt="youtube" width="44" />
+        <img src="images/twitter.svg" alt="twitter" width="44" />
+        <img src="images/vk.svg" alt="vk" width="44" />
+      </div>
+      <div class="date">
+        <p>WDD231 Class Project</p>
+        <p>Anton Gorokhov</p>
+        <p><span id="current-year"></span> Moscow Chamber of Commerce</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
