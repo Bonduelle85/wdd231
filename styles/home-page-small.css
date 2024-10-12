@@ -58,4 +58,7 @@
   nav.open {
     grid-template-rows: 1fr;
   }
+  :modal {
+  animation: none;
+}
 }
