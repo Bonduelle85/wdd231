@@ -30,7 +30,9 @@ function showData(value) {
         .replace("%40", "@")
         .replace(/\+/g, " ")
         .replace(/\%2F/g, "/")
-        .replace("%3A", ":");
+        .replace("%3A", ":")
+        .replace("%2B", "+")
+        .replace("%27", "`");
     }
   });
   return result;

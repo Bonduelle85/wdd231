@@ -55,7 +55,13 @@
     display: grid;
     margin: 16px;
   }
-  
+  .membership {
+    animation: none;
+  }
+  .membership button {
+    animation: none;
+  }
+
   /* Footer */
   footer {
     display: block;

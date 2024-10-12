@@ -45,26 +45,32 @@ document.querySelector("#gold-button").addEventListener("click", () => {
 });
 
 function showMembershipDialog(level) {
+  let title;
   let description;
   switch (level) {
     case "np":
-      description = "Non Profit Membership Level";
+      title = "Non Profit";
+      description = "Cost: 0$. Include events only.";
       break;
     case "bronze":
-      description = "Bronze Membership Level";
+      title = "Bronze";
+      description = "Cost: 5$. Include events and training.";
       break;
     case "silver":
-      description = "Silver Membership Level";
+      title = "Silver";
+      description = "Cost: 10$. Include events, training and advertising.";
       break;
     case "gold":
-      description = "Gold Membership Level";
+      title = "Gold";
+      description =
+        "Cost: 15$. Include events, training, advertising and 20% discount.";
       break;
     default:
       break;
   }
   membershipDialog.innerHTML = `
-    <h3>${description}</h3>
-    <p>Some ${description} Information</p>
+    <h3>${title}</h3>
+    <p>${description}</p>
     <br>
     <button id="dialog-close" type="reset">Close</button>
   `;
