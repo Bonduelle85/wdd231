@@ -70,3 +70,16 @@
     margin: 16px 0 16px 0;
   }
 }
+
+@media (max-width: 650px) {
+  header {
+    justify-content: center;
+  }
+  img.day-night {
+    margin-left: 20px;
+    scale: 0.5;
+  }
+  #menu-button {
+    top: 1rem;
+  } 
+}

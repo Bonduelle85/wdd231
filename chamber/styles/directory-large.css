@@ -225,7 +225,7 @@ form label {
 }
 form h3 {
   font-size: 0.9rem;
-  color: #e07a5f;
+  color: var(--black);
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid #eee;
 }
@@ -273,7 +273,7 @@ form input[type="submit"] {
   align-self: center;
   border: none;
   text-align: center;
-  background-color: rgb(93, 95, 116);
+  background-color: var(--card-border);
   color: var(--white);
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -327,11 +327,9 @@ form input[type="submit"] {
 @keyframes dialog-appearance {
   0% {
     transform: scale(0.5);
-    opacity: 0.1; 
   }
   60% {
     transform: scale(1);
-    opacity: 1; 
   }
 }
 
