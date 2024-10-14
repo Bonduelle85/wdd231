@@ -97,8 +97,12 @@
     <main>
       <div class="hero-img-container">
         <picture>
-          <source srcset="images/hero-small.webp" media="(max-width: 900px)" >
-          <img src="images/hero-large.webp" alt="moscow city" >
+          <source srcset="images/hero-mobile-480.webp" media="(max-width: 480px)" >
+          <source srcset="images/hero-mobile-920.webp" media="(max-width: 900px)" >
+          <source srcset="images/hero-small-1340.webp" media="(max-width: 1340px)" >
+          <source srcset="images/hero-medium-1600.webp" media="(max-width: 1600px)" >
+          <source srcset="images/hero-large-1920.webp" media="(max-width: 1920px)" >
+          <img src="images/hero-large-1920.webp" alt="moscow city" loading="lazy">
         </picture>
       </div>
 
