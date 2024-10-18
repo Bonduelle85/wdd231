@@ -243,19 +243,6 @@ function CalendarControl() {
 }
 const calendarControl = new CalendarControl();
 
-// Local Storage old project (WDD 131)
-const visitsDisplay = document.querySelector(".visits");
-
-let numVisits = Number(localStorage.getItem("numVisits")) || 0;
-
-if (numVisits !== 0) {
-  visitsDisplay.textContent = numVisits;
-} else {
-  visitsDisplay.textContent = `This is your first visit. 😉 Welcome!`;
-}
-numVisits++;
-localStorage.setItem("numVisits", numVisits);
-
 // Local Storage (WDD 231)
 // Current date
 const now = new Date();
@@ -271,7 +258,7 @@ if (!lastVisit) {
   const lastVisitDate = new Date(lastVisit);
   const timeDifference = now - lastVisitDate; // difference in milliseconds
   let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // convert into days
-  // daysDifference = 5
+  // daysDifference = 90
   if (daysDifference < 1) {
     document.querySelector(".element").textContent = "Back so soon! Awesome!";
   } else {

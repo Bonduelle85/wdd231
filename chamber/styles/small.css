@@ -1,3 +1,18 @@
+@media (max-width: 1100px) {
+  /* Discover */
+  .demographic-data,
+  .upcoming-event,
+  .calendar {
+    width: 350px;
+  }
+  .attractions-container {
+    transform: scaleX(0.9);
+  }
+  .attraction-card:hover {
+    transform: none;
+  }
+}
+
 @media (max-width: 900px) {
   header {
     justify-content: space-around;
@@ -61,6 +76,21 @@
   .membership button {
     animation: none;
   }
+  /* Discover */
+  .main-discover {
+    display: grid;
+  }
+  .demographic-data,
+  .upcoming-event,
+  .calendar {
+    width: 450px;
+  }
+  .attractions-container {
+    transform: scaleX(0.9);
+  }
+  .attractions-title {
+    margin-top: 60px;
+  }
 
   /* Footer */
   footer {
@@ -81,5 +111,5 @@
   }
   #menu-button {
     top: 1rem;
-  } 
+  }
 }

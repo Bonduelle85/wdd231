@@ -11,8 +11,8 @@
     <meta name="author" content="Anton Gorokhov" />
 
     <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/directory-large.css" rel="stylesheet" />
-    <link href="styles/directory-small.css" rel="stylesheet" />
+    <link href="styles/large.css" rel="stylesheet" />
+    <link href="styles/small.css" rel="stylesheet" />
 
     <script src="scripts/discover.js" defer></script>
 
@@ -65,7 +65,12 @@
     <header>
       <div class="logo-title-container">
         <picture class="logo">
-          <img src="images/logo.webp" alt="chamber logo" width="80" height="80" />
+          <img
+            src="images/logo.webp"
+            alt="chamber logo"
+            width="80"
+            height="80"
+          />
         </picture>
         <div class="header-title">
           <h1 id="header-h1">Moscow</h1>
@@ -125,71 +130,109 @@
       </ul>
     </nav>
 
-    <p id="local-storage">
-      <span class="label">Number of visits to this page: </span
-      ><span class="visits"></span>
-    </p>
+    
     <p class="element"></p>
 
     <main class="main-discover">
       <div class="side">
         <div class="demographic-data">
-            <h4>Demographics</h4>
-            <hr>
-            <p>Moscow is the most populated city in Russia</p>
-            <p><b>Population:</b>13.149.803</p>
-            <p><b>Unemployment:</b>1.7%</p>
-            <p><b>National composition:</b></p>
-            <ul>
-              <li><p>Russians: 91%</p></li>
-              <li><p>Tatars: 1.4%</p></li>
-              <li><p>Ukrainians: 1.4%</p></li>
-              <li><p>Armenians: 0.9%</p></li>
-              <li><p>Jews: 0.4%</p></li>
-              <li><p>Germans: 0.1%</p></li>
-              <li><p>Others: 4.3%</p></li>
-            </ul> 
+          <h4>Demographics</h4>
+          <hr />
+          <p>Moscow is the most populated city in Russia</p>
+          <p><b>Population:</b>13.149.803</p>
+          <p><b>Unemployment:</b>1.7%</p>
+          <p><b>National composition:</b></p>
+          <ul>
+            <li><p>Russians: 91%</p></li>
+            <li><p>Tatars: 1.4%</p></li>
+            <li><p>Ukrainians: 1.4%</p></li>
+            <li><p>Armenians: 0.9%</p></li>
+            <li><p>Jews: 0.4%</p></li>
+            <li><p>Germans: 0.1%</p></li>
+            <li><p>Others: 4.3%</p></li>
+          </ul>
         </div>
         <div class="upcoming-event">
-            <h4>Upcoming Event</h4>
-            <hr>
-            <img src="images/discover/fair-event.webp" alt="Crafts Fair photo" width="250" height="185" loading="lazy">
-            <p><b>Crafts Fair in Moscow.</b></p>
-            <p><b>Date:</b>23.10.2024. Free admission.</p>
-            <p><b>Location:</b>GUM.</p>
+          <h4>Upcoming Event</h4>
+          <hr />
+          <img
+            src="images/discover/fair-event.webp"
+            alt="Crafts Fair photo"
+            width="250"
+            height="185"
+            loading="lazy"
+          />
+          <p><b>Crafts Fair in Moscow.</b></p>
+          <p><b>Date:</b>23.10.2024. Free admission.</p>
+          <p><b>Location:</b>GUM.</p>
         </div>
         <div class="calendar"></div>
       </div>
-      <div class="attractions-conainer">
-        <h2>Moscow attractions</h2>
+      <div class="attractions-container">
+        <h2 class="attractions-title">Moscow attractions</h2>
         <div class="attractions-card-container">
-            <div class="attraction-card">
-                <img src="images/discover/red-square-kremlin.webp" alt="Red Square and Kremlin photo" width="500" height="335" loading="lazy">
-                <p>Red Square and Kremlin</p>
-            </div>
-            <div class="attraction-card">
-                <img src="images/discover/st-basil-cathedral.webp" alt="St Basil`s Cathedral photo" width="500" height="335" loading="lazy">
-                <p>St Basil`s Cathedral</p>
-            </div>
-            <div class="attraction-card">
-                <img src="images/discover/gorky-park.webp" alt="Gorky Park photo" width="500" height="335" loading="lazy">
-                <p>Gorky Park</p>
-            </div>
-            <div class="attraction-card">
-                <img src="images/discover/moscow-city.webp" alt="Moscow City photo" width="500" height="335" loading="lazy">
-                <p>Moscow City</p>
-            </div>
-            <div class="attraction-card">
-                <img src="images/discover/moscow-river.webp" alt="Moscow River photo" width="500" height="335" loading="lazy">
-                <p>Moscow River</p>
-            </div>
-            <div class="attraction-card">
-                <img src="images/discover/exhibition-achievements-national-economy.webp" alt="Exhibition of Achievements of National Economy photo" width="500" height="335" loading="lazy">
-                <p>Exhibition of Achievements of National Economy</p>
-            </div>
-            
+          <div class="attraction-card">
+            <img
+              src="images/discover/red-square-kremlin.webp"
+              alt="Red Square and Kremlin photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>Red Square and Kremlin</p>
+          </div>
+          <div class="attraction-card">
+            <img
+              src="images/discover/st-basil-cathedral.webp"
+              alt="St Basil`s Cathedral photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>St Basil`s Cathedral</p>
+          </div>
+          <div class="attraction-card">
+            <img
+              src="images/discover/gorky-park.webp"
+              alt="Gorky Park photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>Gorky Park</p>
+          </div>
+          <div class="attraction-card">
+            <img
+              src="images/discover/moscow-city.webp"
+              alt="Moscow City photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>Moscow City</p>
+          </div>
+          <div class="attraction-card">
+            <img
+              src="images/discover/moscow-river.webp"
+              alt="Moscow River photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>Moscow River</p>
+          </div>
+          <div class="attraction-card">
+            <img
+              src="images/discover/exhibition-achievements-national-economy.webp"
+              alt="Exhibition of Achievements of National Economy photo"
+              width="500"
+              height="335"
+              loading="lazy"
+            />
+            <p>Exhibition of Achievements of National Economy</p>
+          </div>
         </div>
-      </div>    
+      </div>
     </main>
 
     <footer>
@@ -201,9 +244,27 @@
         <p>(222) 555-2300</p>
       </div>
       <div class="social">
-        <img src="images/instagram.svg" alt="youtube" width="44" height="44" loading="lazy"/>
-        <img src="images/twitter.svg" alt="twitter" width="44" height="44" loading="lazy"/>
-        <img src="images/vk.svg" alt="vk" width="44" height="44" loading="lazy"/>
+        <img
+          src="images/instagram.svg"
+          alt="youtube"
+          width="44"
+          height="44"
+          loading="lazy"
+        />
+        <img
+          src="images/twitter.svg"
+          alt="twitter"
+          width="44"
+          height="44"
+          loading="lazy"
+        />
+        <img
+          src="images/vk.svg"
+          alt="vk"
+          width="44"
+          height="44"
+          loading="lazy"
+        />
       </div>
       <div class="date">
         <p>WDD231 Class Project</p>
