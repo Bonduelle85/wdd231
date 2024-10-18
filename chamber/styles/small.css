@@ -69,7 +69,7 @@
     box-shadow: none;
     border: 1px solid var(--card-border);
   }
-  
+
   /* Join */
   .join-container {
     display: grid;
@@ -81,24 +81,20 @@
   .membership button {
     animation: none;
   }
-  .form-section, .membership-section {
+  .form-section,
+  .membership-section {
     padding: 0;
   }
   /* Discover */
   .main-discover {
-    display: grid;
+    grid-template-columns: auto;
   }
   .demographic-data,
   .upcoming-event,
   .calendar {
-    width: 450px;
+    width: 70%;
   }
-  .attractions-container {
-    transform: scaleX(0.9);
-  }
-  .attractions-title {
-    margin-top: 60px;
-  }
+  
 
   /* Footer */
   footer {

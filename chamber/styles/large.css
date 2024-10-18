@@ -365,7 +365,9 @@ footer {
   color: var(--calendar-today-color);
 }
 .main-discover {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
   padding: 16px;
 }
 .side {
@@ -375,10 +377,14 @@ footer {
   grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
+  align-items: start;
   width: 100%;
-  height: 100%;
   margin: 35px 0;
 }
+.attractions-card-container {
+  padding: 16px;
+}
+
 .demographic-data {
   grid-area: 1/1/2/2;
 }
