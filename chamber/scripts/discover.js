@@ -243,7 +243,7 @@ function CalendarControl() {
 }
 const calendarControl = new CalendarControl();
 
-// Local Storage (WDD 231)
+// Local Storage
 // Current date
 const now = new Date();
 // Last visit date from localStorage
@@ -251,7 +251,7 @@ const lastVisit = localStorage.getItem("lastVisit");
 
 // If lastVisit is not found - this is the first visit
 if (!lastVisit) {
-  document.querySelector(".element").textContent =
+  document.querySelector(".visit-locator").textContent =
     "Welcome! Let us know if you have any questions.";
 } else {
   // If there lastVisit found - calculate the difference between the current date and the last visit
@@ -260,11 +260,12 @@ if (!lastVisit) {
   let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // convert into days
   // daysDifference = 90
   if (daysDifference < 1) {
-    document.querySelector(".element").textContent = "Back so soon! Awesome!";
+    document.querySelector(".visit-locator").textContent =
+      "Back so soon! Awesome!";
   } else {
     const dayWord = daysDifference === 1 ? "day" : "days";
     document.querySelector(
-      ".element"
+      ".visit-locator"
     ).textContent = `You last visited ${daysDifference} ${dayWord} ago.`;
   }
 }

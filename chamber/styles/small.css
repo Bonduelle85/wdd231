@@ -65,16 +65,24 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(350px, 1fr));
   }
+  .grid .member-card {
+    box-shadow: none;
+    border: 1px solid var(--card-border);
+  }
+  
   /* Join */
   .join-container {
     display: grid;
-    margin: 16px;
+    margin: 16px 0;
   }
   .membership {
     animation: none;
   }
   .membership button {
     animation: none;
+  }
+  .form-section, .membership-section {
+    padding: 0;
   }
   /* Discover */
   .main-discover {

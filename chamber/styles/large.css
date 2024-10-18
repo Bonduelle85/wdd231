@@ -68,7 +68,7 @@ p {
 }
 .active {
   background-color: var(--current-nav-item);
-  border-radius: 40%;
+  border-radius: 50%;
 }
 
 /* Burger */
@@ -169,6 +169,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 25px;
   align-items: center;
+    padding: 16px;
 }
 .grid .member-card {
   box-shadow: 2px 2px 10px var(--black);
@@ -360,6 +361,9 @@ footer {
 }
 
 /* Discover */
+.visit-locator {
+  color: var(--calendar-today-color);
+}
 .main-discover {
   display: flex;
   padding: 16px;
