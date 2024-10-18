@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Moscow Chamber of Commerce Home Page" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Moscow Chamber of Commerce Home Page" >
     <title>Moscow Chamber of Commerce</title>
-    <meta name="author" content="Anton Gorokhov" />
+    <meta name="author" content="Anton Gorokhov" >
 
-    <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/large.css" rel="stylesheet" />
-    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/normalize.css" rel="stylesheet" >
+    <link href="styles/large.css" rel="stylesheet" >
+    <link href="styles/small.css" rel="stylesheet" >
 
     <script src="scripts/join.js" defer></script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -25,44 +25,44 @@
     <link
       rel="icon"
       href="https://bonduelle85.github.io/wdd231/icon-144x144.ico"
-    />
+    >
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Moscow Chamber of Commerce" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Moscow Chamber of Commerce" >
+    <meta property="og:type" content="website" >
     <meta
       property="og:url"
       content="https://bonduelle85.github.io/wdd231/chamber/index.html"
-    />
+    >
     <meta
       property="og:image"
       content="https://bonduelle85.github.io/wdd231/chamber/images/moskva-sity.webp"
-    />
+    >
     <meta
       property="og:description"
       content="Moscow Chamber of Commerce website"
-    />
+    >
     <meta
       property="og:logo"
       content="https://bonduelle85.github.io/wdd231/chamber/android-chrome-512x512.png"
-    />
+    >
 
-    <meta name="twitter:title" content="Moscow Chamber of Commerce" />
+    <meta name="twitter:title" content="Moscow Chamber of Commerce" >
     <meta
       name="twitter:description"
       content="Moscow Chamber of Commerce website"
-    />
+    >
     <meta
       name="twitter:image"
       content="https://bonduelle85.github.io/wdd231/chamber/images/moskva-sity.webp"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
+    >
+    <meta name="twitter:card" content="summary_large_image" >
   </head>
   <body>
     <header>
       <div class="logo-title-container">
         <picture class="logo">
-          <img src="images/logo.webp" alt="chamber logo" width="80" />
+          <img src="images/logo.webp" alt="chamber logo" width="80" height="80" >
         </picture>
         <div class="header-title">
           <h1 id="header-h1">Moscow</h1>
@@ -77,7 +77,7 @@
         title="Night mode "
         width="64"
         height="64"
-      />
+      >
       <button id="menu-button" aria-label="open menu">
         <span class="span span1"></span>
         <span class="span span2"></span>
@@ -135,7 +135,7 @@
               required
               autocomplete="given-name"
               title="Your First Name"
-            />
+            >
           </label>
 
           <label
@@ -146,7 +146,7 @@
               required
               autocomplete="family-name"
               title="Your Last Name"
-            />
+            >
           </label>
 
           <label
@@ -157,7 +157,7 @@
               autocomplete="organization-title"
               pattern="^[a-zA-Z\s\-]{7,}$"
               title="Your Organization Title"
-            />
+            >
           </label>
 
           <label
@@ -169,7 +169,7 @@
               placeholder="anton88@gmail.com"
               title="Your Email"
               autocomplete="email"
-            />
+            >
           </label>
 
           <label
@@ -180,7 +180,7 @@
               autocomplete="tel"
               title="A Phone Number with dashes"
               placeholder="+7-987-555-1234"
-            />
+            >
           </label>
 
           <label
@@ -191,27 +191,27 @@
               required
               autocomplete="organization"
               title="Your Organization Name"
-            />
+            >
           </label>
 
           <h3>Select Membership Level</h3>
           <label>
-            <input type="radio" name="membership" value="NP" checked />NP
+            <input type="radio" name="membership" value="NP" checked >NP
             Membership
           </label>
           <label>
-            <input type="radio" name="membership" value="Bronze" />Bronze
+            <input type="radio" name="membership" value="Bronze" >Bronze
             Membership
           </label>
           <label>
-            <input type="radio" name="membership" value="Silver" />Silver
+            <input type="radio" name="membership" value="Silver" >Silver
             Membership
           </label>
           <label>
-            <input type="radio" name="membership" value="Gold" />Gold Membership
+            <input type="radio" name="membership" value="Gold" >Gold Membership
           </label>
 
-          <br />
+          <br>
           <label for="description">Organization's Description:</label>
           <textarea
             id="description"
@@ -220,31 +220,31 @@
             required
           ></textarea>
 
-          <input type="hidden" id="timestamp" name="timestamp" />
+          <input type="hidden" id="timestamp" name="timestamp" >
 
-          <input type="submit" value="Join" />
+          <input type="submit" value="Join" >
         </form>
       </section>
 
       <section class="membership-section">
         <div class="membership">
           <p>Non Profit Membership Level</p>
-          <br />
+          <br >
           <button id="np-button">Learn More</button>
         </div>
         <div class="membership">
           <p>Bronze Membership Level</p>
-          <br />
+          <br >
           <button id="bronze-button">Learn More</button>
         </div>
         <div class="membership">
           <p>Silver Membership Level</p>
-          <br />
+          <br >
           <button id="silver-button">Learn More</button>
         </div>
         <div class="membership">
           <p>Gold Membership Level</p>
-          <br />
+          <br >
           <button id="gold-button">Learn More</button>
         </div>
       </section>
@@ -261,9 +261,9 @@
         <p>(222) 555-2300</p>
       </div>
       <div class="social">
-        <img src="images/instagram.svg" alt="youtube" width="44" />
-        <img src="images/twitter.svg" alt="twitter" width="44" />
-        <img src="images/vk.svg" alt="vk" width="44" />
+        <img src="images/instagram.svg" alt="youtube" width="44" height="44">
+        <img src="images/twitter.svg" alt="twitter" width="44" height="44">
+        <img src="images/vk.svg" alt="vk" width="44" height="44">
       </div>
       <div class="date">
         <p>WDD231 Class Project</p>
