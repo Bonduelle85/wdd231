@@ -41,7 +41,6 @@ header {
   align-items: center;
   color: var(--header-footer-text-color);
 }
-
 picture img {
   border-radius: var(--border-radius);
 }
@@ -87,7 +86,6 @@ picture img {
 #menu-button.open .span3 {
   transform: translateY(0) rotate(45deg);
 }
-
 .main-nav li a.active {
   border: 2px solid var(--burger-color);
   padding: 10px;
@@ -115,6 +113,13 @@ picture img {
   width: 100%;
   margin: 0 auto;
   border-radius: 0;
+}
+/* Weather */
+.weather-section {
+  background-color: var(--accent5-color);
+}
+.weather-container {
+  display: flex;
 }
 
 /* Footer */
