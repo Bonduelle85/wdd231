@@ -74,38 +74,25 @@
     <nav id="animation">
       <ul class="main-nav">
         <li><a href="index.html" title="Home" class="active">Home</a></li>
-        <li>
-          <a
-            href="https://bonduelle85.github.io/wdd231/chamber/index.html"
-            title="Chamber"
-            target="_blank"
-            >Chamber</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/Bonduelle85" title="GitHub Profile"
-            >GitHub Profile</a
-          >
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/anton-gorokhov" title="LinkedIn"
-            >LinkedIn</a
-          >
-        </li>
+        <li><a href="boards.html" title="Boards">Boards</a></li>
+        <li><a href="join.html" title="Join">Join</a></li>
       </ul>
     </nav>
     <main>
-      
+      <div class="hero-img-container">
+        <picture>
+          <source srcset="images/home/hero-mobile-480.webp" media="(max-width: 480px)" >
+          <source srcset="images/home/hero-mobile-900.webp" media="(max-width: 900px)" >
+          <source srcset="images/home/hero-1340.webp" media="(max-width: 1340px)" >
+          <source srcset="images/home/hero-1600.webp" media="(max-width: 1600px)" >
+          <source srcset="images/home/hero-1920.webp" media="(max-width: 1920px)" >
+          <img src="images/home/hero-1920.webp" alt="moscow city" >
+        </picture>
+      </div>
     </main>
     <footer>
       <p>
         <span id="current-year"></span>&#128039; Anton Gorokhov &#128039; Russia
-        <img
-          class="russian-flag"
-          src="images/ru.svg"
-          height="25"
-          alt="russian flag"
-        />
       </p>
       <p id="last-modified"></p>
     </footer>
