@@ -1,0 +1,9 @@
+
+.currency-container {
+    display: block;
+    padding: 16px;
+    background-color: rgb(91, 138, 181);
+}
+.currency-container img {
+    margin-bottom: -6px;
+}
