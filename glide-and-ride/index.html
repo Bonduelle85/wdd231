@@ -79,8 +79,8 @@
       </ul>
     </nav>
     <main>
-      <div class="hero-img-container">
-        <picture>
+      <div class="hero-calendar-container">
+        <picture class="">
           <source srcset="images/home/hero-mobile-480.webp" media="(max-width: 480px)" >
           <source srcset="images/home/hero-mobile-900.webp" media="(max-width: 900px)" >
           <source srcset="images/home/hero-1340.webp" media="(max-width: 1340px)" >
@@ -88,15 +88,18 @@
           <source srcset="images/home/hero-1920.webp" media="(max-width: 1920px)" >
           <img src="images/home/hero-1920.webp" alt="hero picture" >
         </picture>
+        <div class="index-calendar-container">
+          <div class="calendar"></div>
+        </div>
       </div>
     </main>
 
     <section class="weather-section">
-        <h1>Weather Conditions</h1>
-        <div class="weather-container">
-            <div class="calendar"></div>
-            <div class="current-weather-card"></div>
-            <div class="weather-forecast-card"></div>
+        <h1 class="weather-section-title">Weather Conditions</h1>
+        <div class="weather-section-container">
+            <div class="weather-section-card current-weather-card"></div>
+            <div class="weather-section-card weather-forecast-card"></div>
+            <div class="weather-section-card other-info-card"></div>
         </div>
     </section>
 

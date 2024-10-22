@@ -18,8 +18,14 @@
   --text-color: #0943a1;
   --header-footer-text-color: #dde2eb;
   --burger-color: #010f25;
+  --white-color: #ffffff;
+  --card-border-color: #010f25;
+  --calendar-background-color: #a499c3;
+  --calendar-date-hover-color: #505050;
+  --calendar-today-color: #eb9921;
 
   --border-radius: 5px;
+  --card-border-radius: 16px;
   --img-border-radius-round: 50%;
 }
 
@@ -27,6 +33,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
   color: var(--text-color);
   background-color: var(--primary-color);
   text-align: center;
@@ -43,6 +50,7 @@ header {
 }
 picture img {
   border-radius: var(--border-radius);
+  height: 100%;
 }
 .logo-header img {
   border-radius: var(--img-border-radius-round);
@@ -109,16 +117,35 @@ picture img {
   color: var(--nav-hover);
 }
 /* Hero */
-.hero-img-container img {
+.hero-calendar-container {
+  background-color: var(--secondary-color);
+}
+.hero-calendar-container img {
   width: 100%;
   margin: 0 auto;
   border-radius: 0;
 }
 /* Weather */
 .weather-section {
-  background-color: var(--accent5-color);
+  background-color: var(--secondary-color);
+  padding: 16px;
 }
-.weather-container {
+.weather-section-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+.weather-section-card {
+  padding: 16px 50px;
+  min-height: 400px;
+  background-color: var(--accent5-color);
+  border: 2px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+}
+.weather-section-card p {
+  text-align: left;
+}
+.info-current-weather {
   display: flex;
 }
 
@@ -136,4 +163,109 @@ footer {
 }
 .brand-footer {
   border-radius: var(--border-radius);
+}
+
+/* Calendar */
+.index-calendar-container {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+}
+.boards-calendar-container {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+}
+.calendar {
+  background: var(--calendar-background-color);
+  overflow: hidden;
+  border: 1px solid var(--card-border-color);
+  border-radius: 16px;
+  box-shadow: 5px 5px 15px var(--calendar-date-hover-color);
+}
+.calendar-inner {
+  padding: 10px 10px;
+}
+.calendar .calendar-inner .calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+.calendar .calendar-inner .calendar-body div {
+  padding: 4px;
+  min-height: 30px;
+  line-height: 30px;
+  border: 1px solid transparent;
+  margin: 10px 2px 0px;
+}
+.calendar .calendar-inner .calendar-body div:nth-child(-n + 7) {
+  border-bottom: 1px solid var(--card-border-color);
+}
+.calendar .calendar-inner .calendar-body div > a {
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.calendar .calendar-inner .calendar-body div:hover {
+  border: 1px solid var(--calendar-date-hover-color);
+  border-radius: 4px;
+}
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+  border: 1px solid transparent;
+}
+.calendar .calendar-inner .calendar-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.calendar .calendar-inner .calendar-today-date {
+  display: grid;
+  text-align: center;
+  cursor: pointer;
+  margin: 3px 0px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+}
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+  display: flex;
+  min-width: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+  text-align: right;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+  background: var(--calendar-today-color);
+  border-radius: 4px;
+}
+.calendar .calendar-inner .calendar-body .calendar-today a{
+  color: var(--white);
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+  border: 1px solid transparent;
+}
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+  color: var(--black);
+  text-decoration: none;
+  padding: 4px 12px;
+  display: inline-block;
+  margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+  height: 20px;
+  width: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+  cursor: pointer;
 }

@@ -1,3 +1,36 @@
+@media (max-width: 1600px) {
+  .calendar {
+    transform: scale(0.95);
+    transform-origin: top left;
+  }
+}
+@media (max-width: 1340px) {
+  .calendar {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+  .index-calendar-container {
+    right: 0px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .calendar {
+    transform: scale(0.7);
+    transform-origin: top left;
+  }
+  .index-calendar-container {
+    right: -80px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .calendar {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+  .index-calendar-container {
+    right: -130px;
+  }
+}
 @media (max-width: 900px) {
   header {
     display: flex;
@@ -5,6 +38,12 @@
   }
   .brand-header {
     display: none;
+  }
+  .calendar {
+    display: none;
+  }
+  .weather-section-container {
+    display: grid;
   }
 
   /* Burger */
