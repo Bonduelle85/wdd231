@@ -60,6 +60,7 @@
     display: grid;
     justify-items: center;
   }
+  /* Index - About Us */
   .about-section-text {
     padding: 16px;
     max-width: 400px;
@@ -105,6 +106,7 @@
 }
 
 @media (max-width: 650px) {
+  /* Index - About Us */
   .about-section-text {
     max-width: 280px;
     margin-right: 0;
@@ -116,6 +118,7 @@
 }
 
 @media (max-width: 480px) {
+  /* Index - About Us */
   .about-section-text {
     max-width: 250px;
     margin-right: 0;

@@ -39,7 +39,7 @@ body {
   text-align: center;
   min-height: 100%;
 }
-
+/* Header */
 header {
   display: flex;
   background-color: var(--primary-color);
