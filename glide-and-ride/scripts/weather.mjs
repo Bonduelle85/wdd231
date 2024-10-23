@@ -27,7 +27,7 @@ async function getWeatherData() {
 function displayCurrentWeather(data) {
 
   document.querySelector(".current-weather-card").innerHTML += `
-        <h3>Current Weather</h3>
+        <h3>Current Weather</h3><hr>
         <div class="info-current-weather">
             <img id="weather-icon"
                 src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png"
@@ -60,7 +60,7 @@ function displayForecast(data) {
   let fifthDayName = utsToLocalDay(data.list[FIFTH_DAY].dt);
 
   document.querySelector(".weather-forecast-card").innerHTML += `
-    <h3>Weather Forecast</h3>
+    <h3>Weather Forecast</h3><hr>
     <div class="info-weather-forecast">
         <p id="first-day">${firstDayName}: <b>${Math.round(
             data.list[FIRST_DAY].main.temp)}°C</b>
@@ -88,7 +88,7 @@ function displayOtherInfo(data) {
   let sunsetUnixTime = data.city.sunset;
   let formattedSunsetTime = utsToLocalTime(sunsetUnixTime);
   document.querySelector(".other-info-card").innerHTML += `
-    <h3>Other Info</h3>
+    <h3>Other Info</h3><hr>
     <div class="info-weather-forecast">
         <p id="wind">Wind: <b>${Math.round(data.list[0].wind.speed)} m/s</b></p>
         <p id="humidity">Humidity: <b>${Math.round(data.list[0].main.humidity)} %</b></p>

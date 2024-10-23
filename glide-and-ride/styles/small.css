@@ -3,6 +3,11 @@
     transform: scale(0.95);
     transform-origin: top left;
   }
+  .about-section-text {
+    padding: 24px;
+    margin-right: -210px;
+    max-width: 420px;
+  }
 }
 @media (max-width: 1340px) {
   .calendar {
@@ -11,6 +16,12 @@
   }
   .index-calendar-container {
     right: 0px;
+  }
+  .about-section-text {
+    padding: 20px;
+    margin-right: -180px;
+    max-width: 360px;
+    font-size: 0.85em;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -45,6 +56,19 @@
   .weather-section-container {
     display: grid;
   }
+  .about-section-container {
+    display: grid;
+    justify-items: center;
+  }
+  .about-section-text {
+    padding: 16px;
+    max-width: 400px;
+    margin-right: 0;
+    margin-bottom: -870px;
+  }
+  .about-section-picture {
+    margin-bottom: 80px;
+  }
 
   /* Burger */
   #menu-button {
@@ -77,5 +101,28 @@
   }
   .social {
     margin: 16px 0 16px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-section-text {
+    max-width: 280px;
+    margin-right: 0;
+    margin-bottom: -680px;
+  }
+  .about-section-picture {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section-text {
+    max-width: 250px;
+    margin-right: 0;
+    margin-bottom: -600px;
+    font-size: 0.95rem;
+  }
+  .about-section-picture {
+    margin-bottom: 120px;
   }
 }

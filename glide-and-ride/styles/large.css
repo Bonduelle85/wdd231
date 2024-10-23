@@ -116,7 +116,7 @@ picture img {
 .main-nav a:hover {
   color: var(--nav-hover);
 }
-/* Hero */
+/* Index - Hero */
 .hero-calendar-container {
   background-color: var(--secondary-color);
 }
@@ -125,7 +125,7 @@ picture img {
   margin: 0 auto;
   border-radius: 0;
 }
-/* Weather */
+/* Index - Weather */
 .weather-section {
   background-color: var(--secondary-color);
   padding: 16px;
@@ -147,6 +147,32 @@ picture img {
 }
 .info-current-weather {
   display: flex;
+}
+/* Index - About Us */
+.about-section {
+  display: grid;
+  justify-content: center;
+  padding: 32px;
+  background-color: var(--secondary-color);
+}
+.about-section-container {
+  display: flex;
+  align-items: center;
+}
+.about-section-title {
+  margin-top: 0;
+}
+.about-section-text {
+  border-radius: var(--card-border-radius);
+  padding: 32px;
+  background-color: var(--accent5-color);
+  max-width: 500px;
+  margin-right: -250px;
+  z-index: 1;
+}
+.about-section-picture img {
+  border-radius: var(--card-border-radius);
+  border: 8px solid var(--accent1-color);
 }
 
 /* Footer */
