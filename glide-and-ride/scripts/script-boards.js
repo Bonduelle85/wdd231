@@ -5,3 +5,4 @@ import calendarControl from "./calendar.mjs";
 initFooter();
 initBurger();
 calendarControl();
+

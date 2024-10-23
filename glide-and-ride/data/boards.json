@@ -1,19 +1,6 @@
 {
   "boards": [
     {
-      "brand": "Roxy",
-      "name": "XOXO Rowley",
-      "sex": "female",
-      "level": ["advanced" , "expert"],
-      "style": ["freestyle", "all mountain"],
-      "shape": "twin tip",
-      "size": "145",
-      "hardness": "5",
-      "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/xoxo-rowley-roxy.webp",
-      "discount": "yes"
-    },
-    {
       "brand": "Jones",
       "name": "Hovercraft",
       "sex": "male",
@@ -125,6 +112,19 @@
       "style": ["freestyle", "all mountain"],
       "shape": "directional twin",
       "size": "146",
+      "hardness": "5",
+      "camber": "hybrid",
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
+      "discount": "yes"
+    },
+    {
+      "brand": "Jones",
+      "name": "Women Twin Sister",
+      "sex": "female",
+      "level": ["progressive", "advanced"],
+      "style": ["freestyle", "all mountain"],
+      "shape": "directional twin",
+      "size": "151",
       "hardness": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
