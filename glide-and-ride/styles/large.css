@@ -174,6 +174,27 @@ picture img {
   border-radius: var(--card-border-radius);
   border: 8px solid var(--accent1-color);
 }
+/* Boards - Boards */
+.boards-section {
+  background-color: var(--secondary-color);
+}
+.boards-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.board-card {
+  padding: 16px;
+  border: 3px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  background-color: var(--white-color);
+}
+.board-card-info {
+  display: flex;
+}
+.board-card-info-details {
+  text-align: start;
+}
 
 /* Footer */
 footer {
