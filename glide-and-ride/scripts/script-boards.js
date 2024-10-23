@@ -69,3 +69,29 @@ async function getProphetData(filter = "all") {
   //   displayBoards(boards);
   console.log(boards);
 }
+
+function displayBoards(boards){
+  boards.forEach((board) => {
+    document.querySelector(".boards-section-container").innerHTML += `
+    <div class="board-card">
+        <p>${board.brand}</p>
+        <p>${board.name}</p>
+        <div class="board-card-info">
+          <img class="board-card-img" src="${board.image}" alt="Image of ${board.name}" loading="lazy" width="300" height="400">
+          <div class="board-card-info">
+            <p class="membership-level">Mship: ${member.membership_level}</p>
+          </div>
+        </div>
+        
+        <hr>
+        <div class="portrait-info-container">
+            <img class="member-portrait" src="${member.image}" alt="Portrait of ${member.name}" loading="lazy" width="50" height="50">
+            <div class="info-container">
+                <p class="member-email">${member.email}</p>
+                <p class="member-phone">${member.phone_number}</p>
+                <a href="${member.website}" title="event" class="membership-url">${member.website}</a>
+            </div>
+        </div>
+    </div>`;
+  });
+}

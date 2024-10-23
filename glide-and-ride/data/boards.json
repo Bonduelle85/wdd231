@@ -8,7 +8,7 @@
       "style": ["freestyle", "all mountain"],
       "shape": "fishtail",
       "size": "152",
-      "hardness": "8",
+      "flex": "8",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp"
     },
@@ -20,7 +20,7 @@
       "style": ["freestyle", "all mountain"],
       "shape": "fishtail",
       "size": "163",
-      "hardness": "8",
+      "flex": "8",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp"
     },
@@ -32,7 +32,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "154",
-      "hardness": "8",
+      "flex": "8",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp"
     },
@@ -44,7 +44,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "148",
-      "hardness": "8",
+      "flex": "8",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp"
     },
@@ -56,7 +56,7 @@
       "style": ["freestyle"],
       "shape": "directional twin",
       "size": "154",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp"
     },
@@ -68,7 +68,7 @@
       "style": ["freestyle"],
       "shape": "directional twin",
       "size": "163",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp"
     },
@@ -80,7 +80,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "149",
-      "hardness": "6",
+      "flex": "6",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp"
     },
@@ -92,7 +92,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "144",
-      "hardness": "6",
+      "flex": "6",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp"
     },
@@ -104,7 +104,7 @@
       "style": ["freestyle", "all mountain"],
       "shape": "directional twin",
       "size": "146",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp"
     },
@@ -116,7 +116,7 @@
       "style": ["freestyle", "all mountain"],
       "shape": "directional twin",
       "size": "151",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp"
     },
@@ -128,7 +128,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "151",
-      "hardness": "7",
+      "flex": "7",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-halldor.webp"
     },
@@ -140,7 +140,7 @@
       "style": ["freestyle"],
       "shape": "twin tip",
       "size": "158",
-      "hardness": "7",
+      "flex": "7",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-sensor.webp"
     },
@@ -152,7 +152,7 @@
       "style": ["freestyle"],
       "shape": "fishtail",
       "size": "151",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-beta.webp"
     },
@@ -164,7 +164,7 @@
       "style": ["freestyle", "freeride"],
       "shape": "directional",
       "size": "159",
-      "hardness": "7",
+      "flex": "7",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/gnu-gorp-split.webp"
     },
@@ -176,7 +176,7 @@
       "style": ["freeride"],
       "shape": "directional",
       "size": "159",
-      "hardness": "7",
+      "flex": "7",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/burton-ft-strt-cht-spt.webp"
     },
@@ -188,7 +188,7 @@
       "style": ["freeride", "carving"],
       "shape": "directional",
       "size": "152",
-      "hardness": "9",
+      "flex": "9",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp"
     },
@@ -200,7 +200,7 @@
       "style": ["freeride", "carving"],
       "shape": "directional",
       "size": "148",
-      "hardness": "9",
+      "flex": "9",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp"
     },
@@ -212,7 +212,7 @@
       "style": ["freeride", "carving"],
       "shape": "directional twin",
       "size": "151",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp"
     },
@@ -224,7 +224,7 @@
       "style": ["freeride", "carving"],
       "shape": "directional twin",
       "size": "161",
-      "hardness": "5",
+      "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp"
     },
@@ -236,7 +236,7 @@
       "style": ["freestyle", "all mountain"],
       "shape": "directional twin",
       "size": "135",
-      "hardness": "4",
+      "flex": "4",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-prodigy.webp"
     }
