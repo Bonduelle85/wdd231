@@ -70,8 +70,10 @@ async function getBoardsData(filter = "all") {
 }
 
 document.querySelector(".boards-section-nav").addEventListener("click", function (e) {
+    clearButtonClasses();
     let targetItem = e.target;
-    if (targetItem.closest(".nav-link")) {
+    targetItem.classList.add("current")
+    if (targetItem.closest(".nav-item")) {
       let targetContent = targetItem.textContent;
       getBoardsData(targetContent.toLowerCase());
     }
@@ -100,6 +102,6 @@ function displayBoards(boards) {
 }
 
 function clearButtonClasses() {
-  let filterbuttons = document.querySelectorAll("button");
-  filterbuttons.forEach((button) => (button.className = ""));
+  let filterButtons = document.querySelectorAll(".nav-item");
+  filterButtons.forEach((button) => (button.classList.remove("current")));
 }

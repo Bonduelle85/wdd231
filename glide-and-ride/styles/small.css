@@ -17,11 +17,19 @@
   .index-calendar-container {
     right: 0px;
   }
+  /* Index - About Us */
   .about-section-text {
     padding: 20px;
     margin-right: -180px;
     max-width: 360px;
     font-size: 0.85em;
+  }
+  /* Boards - Snowboards */
+  .boards-section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -70,6 +78,16 @@
   .about-section-picture {
     margin-bottom: 80px;
   }
+  /* Boards - Snowboards */
+  .boards-section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .board-card {
+    transform: scale(0.9);
+  }
 
   /* Burger */
   #menu-button {
@@ -114,6 +132,16 @@
   }
   .about-section-picture {
     margin-bottom: 100px;
+  }
+  /* Boards - Snowboards */
+  .boards-section-container {
+    gap: 0;
+  }
+  .board-card {
+    padding: 13%;
+  }
+  .board-card-info {
+    display: block;
   }
 }
 
