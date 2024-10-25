@@ -147,9 +147,21 @@ picture img {
 }
 .weather-section-card p {
   text-align: left;
+  margin-top: 0;
 }
 .info-current-weather {
   display: flex;
+  align-items: center;
+}
+.info-weather-other,
+.info-weather-forecast,
+.info-weather-forecast,
+.info-weather-currency {
+  display: grid;
+  justify-content: center;
+}
+.info-weather-currency img {
+  margin-bottom: -4px;
 }
 /* Index - About Us */
 .about-section {

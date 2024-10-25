@@ -56,26 +56,28 @@ async function getCurrencyData(currency) {
 function displayCurrency() {
   document.querySelector(".exchange-rate-card").innerHTML = `
         <h3>Exchange Rate</h3><hr>
-        <p>
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/us.svg" width="28" height="28" alt="USA flag" loading="lazy"/>
-            1$  = <span>${Math.ceil(usdRate)}</span>₽ 
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
-        </p>
-        <p>
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/eu.svg" width="28" height="28" alt="EU flag" loading="lazy"/>
-            1€  = <span>${Math.ceil(eurRate)}</span>₽ 
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
-        </p>
-        <p>
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/gb.svg" width="28" height="28" alt="GB flag" loading="lazy"/>
-            1£  = <span>${Math.ceil(gbpRate)}</span>₽ 
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
-        </p>
-        <p>
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/cn.svg" width="28" height="28" alt="CN flag" loading="lazy"/>
-            1¥  = <span>${Math.ceil(cnyRate)}</span>₽ 
-            <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
-        </p>
+        <div class = "info-weather-currency">
+            <p>
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/us.svg" width="28" height="28" alt="USA flag" loading="lazy"/>
+                1$  = <span>${Math.ceil(usdRate)}</span>₽ 
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
+            </p>
+            <p>
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/eu.svg" width="28" height="28" alt="EU flag" loading="lazy"/>
+                1€  = <span>${Math.ceil(eurRate)}</span>₽ 
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
+            </p>
+            <p>
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/gb.svg" width="28" height="28" alt="GB flag" loading="lazy"/>
+                1£  = <span>${Math.ceil(gbpRate)}</span>₽ 
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
+            </p>
+            <p>
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/cn.svg" width="28" height="28" alt="CN flag" loading="lazy"/>
+                1¥  = <span>${Math.ceil(cnyRate)}</span>₽ 
+                <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/ru.svg" width="28" height="28" alt="RU flag" loading="lazy"/>
+            </p>
+        </div>   
     `;
 }
 

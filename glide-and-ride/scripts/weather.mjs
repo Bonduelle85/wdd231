@@ -88,7 +88,7 @@ function displayOtherInfo(data) {
   let formattedSunsetTime = utsToLocalTime(sunsetUnixTime);
   document.querySelector(".other-info-card").innerHTML += `
     <h3>Other Info</h3><hr>
-    <div class="info-weather-forecast">
+    <div class="info-weather-other">
         <p id="wind">Wind: <b>${Math.round(data.list[0].wind.speed)} m/s</b></p>
         <p id="humidity">Humidity: <b>${Math.round(data.list[0].main.humidity)} %</b></p>
         <p id="pressure">Pressure: <b>${Math.round(data.list[0].main.pressure * PRESSURE_COEF)} mmHg</b></p>
