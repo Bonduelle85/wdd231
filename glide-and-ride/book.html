@@ -103,97 +103,104 @@
 
     <main>
       <div class="hero-calendar-container">
-
         <h1 class="book-title">Booking Snowboard</h1>
-        <h2 class="book-subtitle">Enter your personal data and order details</h2>
+        <h2 class="book-subtitle">
+          Enter your personal data and order details
+        </h2>
 
-        <form method="GET" action="thanks.html" class="designOne">
-          <label
-            >First Name
-            <input
-              type="text"
-              name="first"
-              required
-              autocomplete="given-name"
-              title="Your First Name"
-            />
-          </label>
-          <label
-            >Last Name
-            <input
-              type="text"
-              name="last"
-              required
-              autocomplete="family-name"
-              title="Your Last Name"
-            />
-          </label>
-          <label
-            >Phone
-            <input
-              type="tel"
-              name="phone"
-              autocomplete="tel"
-              title="A Phone Number with dashes"
-              placeholder="+7-892-555-230"
-            />
-          </label>
+        <div class="form-container">
+          <form method="GET" action="thanks.html" class="designOne">
+            <label
+              >First Name
+              <input
+                type="text"
+                name="first"
+                required
+                autocomplete="given-name"
+                title="Your First Name"
+              />
+            </label>
+            <label
+              >Last Name
+              <input
+                type="text"
+                name="last"
+                required
+                autocomplete="family-name"
+                title="Your Last Name"
+              />
+            </label>
+            <label
+              >Phone
+              <input
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+                title="A Phone Number with dashes"
+                placeholder="+7-892-555-230"
+              />
+            </label>
 
-          <label
-            >Email
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="anton85@gmail.com"
-              title="Your Email"
-              autocomplete="email"
-            />
-          </label>
+            <label
+              >Email
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="anton85@gmail.com"
+                title="Your Email"
+                autocomplete="email"
+              />
+            </label>
 
-          <label
-            >Select Level
-            <select name="location" required>
-              <option value="Beginner">Beginner</option>
-              <option value="Progressive">Progressive</option>
-              <option value="Advanced">Advanced</option>
-              <option value="Expert">Expert</option>
-            </select>
-          </label>
+            <h3>Riding Skills</h3>
 
-          <label
-            >Select Riding Style
-            <select name="location" required>
-              <option value="Freestyle">Freestyle</option>
-              <option value="Freeride">Freeride</option>
-              <option value="Advanced">Advanced</option>
-              <option value="Carving">Carving</option>
-            </select>
-          </label>
+            <label
+              >Select Level
+              <select name="location" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Progressive">Progressive</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Expert">Expert</option>
+              </select>
+            </label>
 
-          <label
-            >Sex and Age
-            <select name="location" required>
-              <option value="Unisex">Unisex</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Kid">Kid</option>
-            </select>
-          </label>
+            <label
+              >Select Riding Style
+              <select name="location" required>
+                <option value="Freestyle">Freestyle</option>
+                <option value="Freeride">Freeride</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Carving">Carving</option>
+              </select>
+            </label>
 
-          <label
-            >Start Date
-            <input type="date" name="fecha" required />
-          </label>
-          <label
-            >End Date
-            <input type="date" name="fecha" required />
-          </label>
+            <label
+              >Sex and Age
+              <select name="location" required>
+                <option value="Unisex">Unisex</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Kid">Kid</option>
+              </select>
+            </label>
+            
+            <h3>Booking Dates</h3>
 
-          <input type="hidden" id="timestamp" name="timestamp" />
+            <label
+              >Start Date
+              <input type="date" name="fecha" required />
+            </label>
+            <label
+              >End Date
+              <input type="date" name="fecha" required />
+            </label>
 
-          <input class="submit-button" type="submit" value="Book" />
-        </form>
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <input class="submit-button" type="submit" value="Book" />
+          </form>
+        </div>
       </div>
     </main>
     <footer>

@@ -24,6 +24,10 @@
   --calendar-date-hover-color: #505050;
   --calendar-today-color: #eb9921;
 
+  --required: rgb(247, 43, 43);
+  --focus: rgb(37, 37, 37);
+  --valid: rgb(0, 194, 0);
+
   --border-radius: 5px;
   --card-border-radius: 16px;
   --img-border-radius-round: 50%;
@@ -238,8 +242,19 @@ picture img {
   width: 300px;
 }
 /* Book */
-
+.book-title {
+  padding-top: 40px;
+  font-size: 1.5rem;
+}
+.book-subtitle {
+  font-size: 1.1rem;
+}
 /* Booking - Form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 16px 0 16px;
+}
 form {
   display: grid;
   margin: 1rem 2%;
@@ -250,11 +265,11 @@ form label {
   font-size: 0.8rem;
   padding-top: 0.2rem;
 }
-form h3 {
+h3 {
   font-size: 0.9rem;
-  color: var(--black);
+  color: var(--accent4-color);
   margin: 1.5rem 0 0.2rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--accent2-color);
 }
 
 form input[type="text"],
@@ -265,24 +280,11 @@ form select {
   display: block;
   margin: 0.1rem 0 1rem 0;
   padding: 0.3rem;
-  border: 1px solid var(--card-border);
+  border: 1px solid #999;
   border-radius: 4px;
   border-left-width: 5px;
-  border-left-color: var(--nav-color);
   font-size: 1rem;
-  color: var(--join-buttons);
   width: 300px;
-}
-form textarea {
-  border-radius: 4px;
-  border: 1px solid var(--card-border);
-  width: calc(100% - 30px);
-}
-form textarea:focus {
-  outline: none;
-}
-form input[type="radio"] {
-  margin: 0.3rem;
 }
 
 form input:required {
@@ -300,8 +302,8 @@ form input[type="submit"] {
   align-self: center;
   border: none;
   text-align: center;
-  background-color: var(--card-border);
-  color: var(--white);
+  background-color: var(--accent2-color);
+  color: var(--text-color);
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
   margin: 1.5rem;
@@ -325,8 +327,8 @@ footer {
   margin-bottom: -6px;
 }
 footer a {
-   text-decoration: none;
-   color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Calendar */
@@ -407,7 +409,7 @@ footer a {
   background: var(--calendar-today-color);
   border-radius: 4px;
 }
-.calendar .calendar-inner .calendar-body .calendar-today a{
+.calendar .calendar-inner .calendar-body .calendar-today a {
   color: var(--white);
 }
 
