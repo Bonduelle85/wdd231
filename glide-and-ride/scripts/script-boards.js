@@ -2,6 +2,8 @@ import initBurger from "./burger.mjs";
 import initFooter from "./footer.mjs";
 import calendarControl from "./calendar.mjs";
 
+let boards;
+
 initFooter();
 initBurger();
 calendarControl();
@@ -10,8 +12,6 @@ getBoardsData();
 async function getBoardsData(filter = "all") {
   const BOARDS_URL =
     "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards.json";
-
-  let boards;
 
   try {
     let response = await fetch(BOARDS_URL);
@@ -130,3 +130,11 @@ if (!lastVisit) {
   }
 }
 localStorage.setItem("lastVisit", now);
+
+document.querySelector(".boards-section-container").addEventListener("click", function (e) {
+  let targetItem = e.target;
+  if (targetItem.closest(".board-card")) {
+    let targetContent = targetItem.textContent;
+    
+  }
+});
