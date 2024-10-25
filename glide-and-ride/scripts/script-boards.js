@@ -75,7 +75,6 @@ document.querySelector(".boards-section-nav").addEventListener("click", function
     targetItem.classList.add("current")
     if (targetItem.closest(".nav-item")) {
       let targetContent = targetItem.textContent;
-      console.log(targetContent)
       getBoardsData(targetContent.toLowerCase());
     }
   });
@@ -106,3 +105,28 @@ function clearButtonClasses() {
   let filterButtons = document.querySelectorAll(".nav-item");
   filterButtons.forEach((button) => (button.classList.remove("current")));
 }
+
+
+// Local Storage
+const now = new Date();
+const lastVisit = localStorage.getItem("lastVisit");
+
+if (!lastVisit) {
+  document.querySelector(".visit-locator").textContent =
+    "Hello! Has you jumped to look at incredible boards?";
+} else {
+  const lastVisitDate = new Date(lastVisit);
+  const timeDifference = now - lastVisitDate;
+  let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  
+  if (daysDifference < 1) {
+    document.querySelector(".visit-locator").textContent =
+      "Missed snowboarding? Awesome!";
+  } else {
+    const dayWord = daysDifference === 1 ? "day" : "days";
+    document.querySelector(
+      ".visit-locator"
+    ).textContent = `The last time you mentioned snowboarding was ${daysDifference} ${dayWord} ago.`;
+  }
+}
+localStorage.setItem("lastVisit", now);
