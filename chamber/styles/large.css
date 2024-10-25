@@ -169,7 +169,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 25px;
   align-items: center;
-    padding: 16px;
+  padding: 16px;
 }
 .grid .member-card {
   box-shadow: 2px 2px 10px var(--black);
@@ -498,7 +498,7 @@ footer {
   background: var(--calendar-today-color);
   border-radius: 4px;
 }
-.calendar .calendar-inner .calendar-body .calendar-today a{
+.calendar .calendar-inner .calendar-body .calendar-today a {
   color: var(--white);
 }
 

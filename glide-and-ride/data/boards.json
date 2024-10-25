@@ -10,7 +10,8 @@
       "size": "152",
       "flex": "8",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp",
+      "price": "50"
     },
     {
       "brand": "Jones",
@@ -22,7 +23,8 @@
       "size": "163",
       "flex": "8",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp",
+      "price": "50"
     },
     {
       "brand": "Yes",
@@ -34,7 +36,8 @@
       "size": "154",
       "flex": "8",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp",
+      "price": "40"
     },
     {
       "brand": "Yes",
@@ -46,7 +49,8 @@
       "size": "148",
       "flex": "8",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp",
+      "price": "40"
     },
     {
       "brand": "Jones",
@@ -58,7 +62,8 @@
       "size": "154",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp",
+      "price": "45"
     },
     {
       "brand": "Jones",
@@ -70,7 +75,8 @@
       "size": "163",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp",
+      "price": "45"
     },
     {
       "brand": "Yes",
@@ -82,7 +88,8 @@
       "size": "149",
       "flex": "6",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp",
+      "price": "35"
     },
     {
       "brand": "Yes",
@@ -94,7 +101,8 @@
       "size": "144",
       "flex": "6",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp",
+      "price": "35"
     },
     {
       "brand": "Jones",
@@ -106,7 +114,8 @@
       "size": "146",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
+      "price": "50"
     },
     {
       "brand": "Jones",
@@ -118,7 +127,8 @@
       "size": "151",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
+      "price": "50"
     },
     {
       "brand": "Yes",
@@ -130,7 +140,8 @@
       "size": "151",
       "flex": "7",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-halldor.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-halldor.webp",
+      "price": "45"
     },
     {
       "brand": "Nidecker",
@@ -142,7 +153,8 @@
       "size": "158",
       "flex": "7",
       "camber": "camber",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-sensor.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-sensor.webp",
+      "price": "40"
     },
     {
       "brand": "Nidecker",
@@ -154,7 +166,8 @@
       "size": "151",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-beta.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-beta.webp",
+      "price": "50"
     },
     {
       "brand": "Gnu",
@@ -166,7 +179,8 @@
       "size": "159",
       "flex": "7",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/gnu-gorp-split.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/gnu-gorp-split.webp",
+      "price": "40"
     },
     {
       "brand": "Burton",
@@ -178,7 +192,8 @@
       "size": "159",
       "flex": "7",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/burton-ft-strt-cht-spt.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/burton-ft-strt-cht-spt.webp",
+      "price": "60"
     },
     {
       "brand": "Nidecker",
@@ -190,7 +205,8 @@
       "size": "152",
       "flex": "9",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp",
+      "price": "40"
     },
     {
       "brand": "Nidecker",
@@ -202,7 +218,8 @@
       "size": "148",
       "flex": "9",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp",
+      "price": "40"
     },
     {
       "brand": "Head",
@@ -214,7 +231,8 @@
       "size": "151",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp",
+      "price": "55"
     },
     {
       "brand": "Head",
@@ -226,7 +244,8 @@
       "size": "161",
       "flex": "5",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp",
+      "price": "55"
     },
     {
       "brand": "Jones",
@@ -238,7 +257,8 @@
       "size": "135",
       "flex": "4",
       "camber": "hybrid",
-      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-prodigy.webp"
+      "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-prodigy.webp",
+      "price": "20"
     }
   ]
 }

@@ -62,6 +62,12 @@ picture img {
 .brand-header img {
   border: 2px solid var(--burger-color);
 }
+.social-header img {
+  transition: transform 0.3s ease;
+}
+.social-header img:hover {
+  transform: scale(1.3);
+}
 
 /* Burger */
 #menu-button {
@@ -123,6 +129,7 @@ picture img {
 /* Index - Hero */
 .hero-calendar-container {
   background-color: var(--secondary-color);
+  min-height: 70vh;
 }
 .hero-calendar-container img {
   width: 100%;
@@ -148,6 +155,10 @@ picture img {
   border: 2px solid var(--card-border-color);
   border-radius: var(--card-border-radius);
   box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.weather-section-card:hover {
+  transform: scale(1.03);
 }
 .weather-section-card p {
   text-align: left;
@@ -188,6 +199,10 @@ picture img {
   max-width: 500px;
   margin-right: -250px;
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+.about-section-text:hover {
+  transform: scale(1.03);
 }
 .about-section-picture img {
   border-radius: var(--card-border-radius);
@@ -202,7 +217,10 @@ picture img {
   margin-top: 0;
 }
 .boards-section-nav {
-  margin-block: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
 }
 .nav-item {
   padding: 8px;
@@ -265,7 +283,7 @@ form label {
   font-size: 0.8rem;
   padding-top: 0.2rem;
 }
-h3 {
+form h3 {
   font-size: 0.9rem;
   color: var(--accent4-color);
   margin: 1.5rem 0 0.2rem 0;
@@ -308,6 +326,38 @@ form input[type="submit"] {
   padding: 0.75rem 1.5rem;
   margin: 1.5rem;
   font-size: 1.2rem;
+}
+
+/* Thanks */
+.thanks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+}
+#results {
+  padding: 16px;
+  border: 3px solid var(--accent1-color);
+  border-radius: 1rem;
+  background-color: var(--white-color);
+  text-align: start;
+  width: clamp(400px, 30%, 500px);
+  animation: membership-appearance 1.3s;
+}
+@keyframes membership-appearance {
+  0% {
+    margin-left: 1500px;
+    background-color: var(--light-green);
+    opacity: 0;
+  }
+  60% {
+    margin-left: 0;
+    opacity: 1;
+    background-color: var(--white-color);
+  }
+}
+.result-greetings {
+  text-align: center;
 }
 
 /* Footer */

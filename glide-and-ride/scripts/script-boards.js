@@ -75,6 +75,7 @@ document.querySelector(".boards-section-nav").addEventListener("click", function
     targetItem.classList.add("current")
     if (targetItem.closest(".nav-item")) {
       let targetContent = targetItem.textContent;
+      console.log(targetContent)
       getBoardsData(targetContent.toLowerCase());
     }
   });

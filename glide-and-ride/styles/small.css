@@ -58,6 +58,9 @@
   .brand-header {
     display: none;
   }
+  .social-header img:hover {
+    transform: none;
+  }
   .calendar {
     display: none;
   }
@@ -68,12 +71,18 @@
     display: grid;
     justify-items: center;
   }
+  .weather-section-card:hover {
+    transform: none;
+  }
   /* Index - About Us */
   .about-section-text {
     padding: 16px;
     max-width: 400px;
     margin-right: 0;
     margin-bottom: -870px;
+  }
+  .about-section-text:hover {
+    transform: none;
   }
   .about-section-picture {
     margin-bottom: 80px;

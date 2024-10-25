@@ -135,6 +135,7 @@
               <input
                 type="tel"
                 name="phone"
+                required
                 autocomplete="tel"
                 title="A Phone Number with dashes"
                 placeholder="+7-892-555-230"
@@ -146,7 +147,6 @@
               <input
                 type="email"
                 name="email"
-                required
                 placeholder="anton85@gmail.com"
                 title="Your Email"
                 autocomplete="email"
@@ -157,7 +157,7 @@
 
             <label
               >Select Level
-              <select name="location" required>
+              <select name="level" required>
                 <option value="Beginner">Beginner</option>
                 <option value="Progressive">Progressive</option>
                 <option value="Advanced">Advanced</option>
@@ -167,17 +167,17 @@
 
             <label
               >Select Riding Style
-              <select name="location" required>
+              <select name="style" required>
+                <option value="Freestyle">All mountain</option>
                 <option value="Freestyle">Freestyle</option>
                 <option value="Freeride">Freeride</option>
-                <option value="Advanced">Advanced</option>
                 <option value="Carving">Carving</option>
               </select>
             </label>
 
             <label
               >Sex and Age
-              <select name="location" required>
+              <select name="age" required>
                 <option value="Unisex">Unisex</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -189,11 +189,11 @@
 
             <label
               >Start Date
-              <input type="date" name="fecha" required />
+              <input type="date" name="start" required />
             </label>
             <label
               >End Date
-              <input type="date" name="fecha" required />
+              <input type="date" name="end" required />
             </label>
 
             <input type="hidden" id="timestamp" name="timestamp" />
