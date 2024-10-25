@@ -12,7 +12,6 @@ async function getWeatherData() {
     const response = await fetch(forecastUrl);
     if (response.ok) {
       let data = await response.json();
-      console.log(data);
       displayCurrentWeather(data);
       displayForecast(data);
       displayOtherInfo(data);

@@ -10,7 +10,7 @@
     <link href="styles/large.css" rel="stylesheet" />
     <link href="styles/small.css" rel="stylesheet" />
 
-    <script src="scripts/script-index.js" defer type="module"></script>
+    <script src="scripts/script-index.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,11 +95,12 @@
     </main>
 
     <section class="weather-section">
-        <h1 class="weather-section-title">Weather Conditions</h1>
+        <h1 class="weather-section-title">Weather Conditions | Exchange Rate</h1>
         <div class="weather-section-container">
             <div class="weather-section-card current-weather-card"></div>
             <div class="weather-section-card weather-forecast-card"></div>
             <div class="weather-section-card other-info-card"></div>
+            <div class="weather-section-card exchange-rate-card"></div>
         </div>
     </section>
 
@@ -133,9 +134,10 @@
         <a href="https://vk.com/julia.davydova" target="_blank"><img src="images/socials/vk.svg" alt="vk" width="44" height="44"></a>
       </div>
       <div class="date">
-        <p><span id="current-year"></span></p>
+        <p><span id="current-year"></span> <img class="brand-footer" src="images/brand-small.webp" alt="brand" height="32"></p>
+        <p><a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
+        <p><a href="https://www.exchangerate-api.com/" target="_blank">exchangerate-api.com</a></p>
         <p id="last-modified"></p>
-        <img class="brand-footer" src="images/brand-small.webp" alt="brand" height="22">
       </div>
     </footer>
   </body>

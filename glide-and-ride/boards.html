@@ -10,7 +10,7 @@
     <link href="styles/large.css" rel="stylesheet" />
     <link href="styles/small.css" rel="stylesheet" />
 
-    <script src="scripts/script-boards.js" defer type="module"></script>
+    <script src="scripts/script-boards.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,13 +97,17 @@
       <h1 class="boards-section-title">Snowboards</h1>
       <nav class="boards-section-nav">
         <a class="all nav-item current">All</a>
+        <a>|</a>
         <a class="male nav-item">Male</a>
         <a class="female nav-item">Female</a>
         <a class="unisex nav-item">Unisex</a>
         <a class="kids nav-item">Kids</a>
+        <a>|</a>
         <a class="beginner nav-item">Beginner</a>
         <a class="progressive nav-item">Progressive</a>
         <a class="advanced nav-item">Advanced</a>
+        <a class="expert nav-item">Expert</a>
+        <a>|</a>
         <a class="all-mountain nav-item">All-mountain</a>
         <a class="freestyle nav-item">Freestyle</a>
         <a class="freeride nav-item">Freeride</a>
@@ -124,9 +128,10 @@
         <a href="https://vk.com/julia.davydova" target="_blank"><img src="images/socials/vk.svg" alt="vk" width="44" height="44"></a>
       </div>
       <div class="date">
-        <p><span id="current-year"></span></p>
+        <p><span id="current-year"></span> <img class="brand-footer" src="images/brand-small.webp" alt="brand" height="32"></p>
+        <p><a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
+        <p><a href="https://www.exchangerate-api.com/" target="_blank">exchangerate-api.com</a></p>
         <p id="last-modified"></p>
-        <img class="brand-footer" src="images/brand-small.webp" alt="brand" height="22">
       </div>
     </footer>
   </body>
