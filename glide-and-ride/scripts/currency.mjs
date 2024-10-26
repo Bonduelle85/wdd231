@@ -22,7 +22,7 @@ async function fetchAllCurrencies() {
   }
 
 async function getCurrencyData(currency) {
-    // let url = ` https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${currency}`;
+    let url = ` https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${currency}`;
   try {
     const response = await fetch(url);
     if (response.ok) {
