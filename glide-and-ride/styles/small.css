@@ -94,6 +94,9 @@
     justify-content: center;
     gap: 8px;
   }
+  .nav-item:hover {
+    transform: none;
+  }
   .board-card {
     transform: scale(0.9);
   }

@@ -147,12 +147,12 @@ const boardCardDialog = document.querySelector("#board-card-dialog");
 function showBoardCardDialog(board) {
   
   boardCardDialog.innerHTML = `
-    <h3>${board.brand} ${board.name}</h3>
+    <h3>${board.brand} ${board.name}</h3><hr>
     <p>Size: ${board.size}</p>
     <br>
-    <p>Description: ${board.description}</p>
+    <p><b>Description:</b> ${board.description}</p>
     <br>    
-    <p>Price: ${board.price}</p>
+    <p><b>Price:</b> ${board.price}$</p>
     <button id="dialog-close" type="reset">Close</button>
   `;
   let closeDialogButton = document.querySelector("#dialog-close");

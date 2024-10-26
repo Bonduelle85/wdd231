@@ -271,6 +271,28 @@ picture img {
   text-align: start;
   width: 300px;
 }
+/* Dialog */
+#board-card-dialog {
+  border-radius: var(--card-border-radius);
+  border: 4px solid var(--accent1-color);
+  max-width: 500px; 
+  min-width: 250px;
+  animation: dialog-appearance 0.5s;
+}
+#board-card-dialog button {
+  border-radius: 5px;
+  border: 1px solid var(--card-border-color);
+  cursor: pointer;
+}
+@keyframes dialog-appearance {
+  0% {
+    opacity: 0.9;
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Book */
 .book-title {
   padding-top: 40px;
