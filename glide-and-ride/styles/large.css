@@ -41,7 +41,7 @@ body {
 header {
   display: flex;
   background-color: var(--primary-color);
-  padding: 16px;
+  padding: 32px;
   justify-content: space-between;
   align-items: center;
   color: var(--header-footer-text-color);
@@ -73,7 +73,7 @@ picture img {
   color: var(--burger-color);
   position: absolute;
   top: 1rem;
-  right: 2.2rem;
+  right: 3.1rem;
 }
 #menu-button span {
   position: absolute;
