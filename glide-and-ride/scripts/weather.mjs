@@ -26,7 +26,7 @@ async function getWeatherData() {
 function displayCurrentWeather(data) {
 
   document.querySelector(".current-weather-card").innerHTML += `
-        <h3>Current Weather</h3><hr>
+        <h2>Current Weather</h2><hr>
         <div class="info-current-weather">
             <img id="weather-icon"
                 src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png"

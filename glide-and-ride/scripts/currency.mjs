@@ -1,4 +1,3 @@
-// Api request (USD example) - ` https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
 const API_KEY = "cce90ec3416e16506e48a923";
 const USD = "USD";
 const GBP = "GBP";
@@ -55,7 +54,7 @@ async function getCurrencyData(currency) {
 
 function displayCurrency() {
   document.querySelector(".exchange-rate-card").innerHTML = `
-        <h3>Exchange Rate</h3><hr>
+        <h2>Exchange Rate</h2><hr>
         <div class = "info-weather-currency">
             <p>
                 <img src="https://bonduelle85.github.io/wdd231/glide-and-ride/images/currency/us.svg" width="28" height="28" alt="USA flag" loading="lazy"/>

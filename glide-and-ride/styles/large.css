@@ -357,6 +357,11 @@ form input[type="submit"] {
 }
 
 /* Thanks */
+.main-thanks-container {
+  background-color: var(--secondary-color);
+  color: var(--calendar-text-color);
+  height: 800px;
+}
 .thanks-container {
   display: flex;
   flex-wrap: wrap;
