@@ -1,18 +1,16 @@
 
 :root {
-  --primary-color: #4074c8;
+  --primary-color: #9CB7E2;
   --secondary-color: #d3d8f4;
   --accent1-color: #eb9921;
   --accent2-color: #a499c3;
-  --accent3-color: #7ab3e5;
-  --accent4-color: #bb4f3b;
-  --accent5-color: #e5c195;
-  --accent6-color: #41e1fa;
+  --accent3-color: #e5c195;
   --text-color: #0943a1;
-  --header-footer-text-color: #dde2eb;
+  --header-footer-text-color: #010f25;
   --burger-color: #383838;
   --white-color: #ffffff;
   --card-border-color: #010f25;
+  --calendar-text-color: #010f25;
   --calendar-background-color: #a499c3;
   --calendar-date-hover-color: #505050;
   --calendar-today-color: #eb9921;
@@ -123,6 +121,7 @@ picture img {
 /* Index - Hero */
 .hero-calendar-container {
   background-color: var(--secondary-color);
+  color: var(--calendar-text-color);
 }
 .hero-calendar-container img {
   width: 100%;
@@ -144,7 +143,7 @@ picture img {
   padding: 16px 50px;
   min-height: 400px;
   min-width: 365px;
-  background-color: var(--accent5-color);
+  background-color: var(--accent3-color);
   border: 2px solid var(--card-border-color);
   border-radius: var(--card-border-radius);
   box-sizing: border-box;
@@ -188,7 +187,7 @@ picture img {
 .about-section-text {
   border-radius: var(--card-border-radius);
   padding: 32px;
-  background-color: var(--accent5-color);
+  background-color: var(--accent3-color);
   max-width: 500px;
   margin-right: -250px;
   z-index: 1;
@@ -227,7 +226,8 @@ picture img {
   padding: 8px;
   border-radius: var(--border-radius);
   border: 2px solid var(--card-border-color);
-  background-color: var(--accent5-color);
+  background-color: var(--accent3-color);
+  color: var(--calendar-text-color);
   cursor: pointer;
   white-space: nowrap;
   transition: transform 0.3s ease;
@@ -313,7 +313,7 @@ form label {
 }
 form h3 {
   font-size: 1.1rem;
-  color: var(--accent4-color);
+  color: var(--text-color);
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid var(--accent2-color);
 }
@@ -424,7 +424,7 @@ footer a {
   background: var(--calendar-background-color);
   overflow: hidden;
   border: 1px solid var(--card-border-color);
-  border-radius: 16px;
+  border-radius: var(--card-border-radius);
   box-shadow: 5px 5px 15px var(--calendar-date-hover-color);
 }
 .calendar-inner {

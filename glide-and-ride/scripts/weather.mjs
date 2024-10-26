@@ -5,7 +5,7 @@ const LON = 40.25;
 const API_KEY = "ad18ff83e7a5532d6104bf91da401a88";
 const UNITS = "metric";
 
-const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&units=${UNITS}&appid=${API_KEY}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&units=${UNITS}&appid=${API_KEY}`;
 
 async function getWeatherData() {
   try {
