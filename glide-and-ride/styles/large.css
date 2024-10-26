@@ -1,10 +1,3 @@
-/*
-  font-weight: 300;
-  font-weight: 400;
-  font-weight: 700;
-  font-style: normal;
-  font-style: italic;
-*/
 
 :root {
   --primary-color: #4074c8;
@@ -215,6 +208,8 @@ picture img {
 }
 .visit-locator {
   font-size: 1.9rem;
+  font-style: italic;
+  font-weight: 700;
   color: var(--social-svg-color);
 }
 .boards-section-title {
@@ -313,11 +308,11 @@ form {
 }
 form label {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-top: 0.2rem;
 }
 form h3 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--accent4-color);
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid var(--accent2-color);
@@ -334,7 +329,7 @@ form select {
   border: 1px solid #999;
   border-radius: 4px;
   border-left-width: 5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 300px;
 }
 
