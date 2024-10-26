@@ -12,7 +12,8 @@
       "flex": "8",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp",
-      "price": "50"
+      "price": "50",
+      "description": "A modern take on the alternative freeride board that incorporates cutting-edge technology and whose agility and performance versatility have made it a cult favorite."
     },
     {
       "id": "1",
@@ -26,7 +27,8 @@
       "flex": "8",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-hovercraft.webp",
-      "price": "50"
+      "price": "50",
+      "description": "A modern take on the alternative freeride board that incorporates cutting-edge technology and whose agility and performance versatility have made it a cult favorite."
     },
     {
       "id": "2",
@@ -40,7 +42,8 @@
       "flex": "8",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp",
-      "price": "40"
+      "price": "40",
+      "description": "This is a freestyle snowboard. The board is designed for all levels of riders performing various tricks in the park, on the flat or in the street."
     },
     {
       "id": "3",
@@ -54,7 +57,8 @@
       "flex": "8",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-eiki.webp",
-      "price": "40"
+      "price": "40",
+      "description": "This is a freestyle snowboard. The board is designed for all levels of riders performing various tricks in the park, on the flat or in the street."
     },
     {
       "id": "4",
@@ -68,7 +72,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp",
-      "price": "45"
+      "price": "45",
+      "description": "A snowboard with directional twin geometry designed for those who want a board that can handle any slope with freestyle elements. Imagine the entire mountain as your personal park."
     },
     {
       "id": "5",
@@ -82,7 +87,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-mountain-twin.webp",
-      "price": "45"
+      "price": "45",
+      "description": "A snowboard with directional twin geometry designed for those who want a board that can handle any slope with freestyle elements. Imagine the entire mountain as your personal park."
     },
     {
       "id": "6",
@@ -96,7 +102,8 @@
       "flex": "6",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp",
-      "price": "35"
+      "price": "35",
+      "description": "A classic freestyle board designed for bold and adventurous girls who want to excel on the slopes. Versatility makes the Rival the perfect choice."
     },
     {
       "id": "7",
@@ -110,7 +117,8 @@
       "flex": "6",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-rival.webp",
-      "price": "35"
+      "price": "35",
+      "description": "A classic freestyle board designed for bold and adventurous girls who want to excel on the slopes. Versatility makes the Rival the perfect choice."
     },
     {
       "id": "8",
@@ -124,7 +132,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
-      "price": "50"
+      "price": "50",
+      "description": "A women's snowboard with directional twin geometry, designed for those who want a board that can handle any slope with freestyle elements. Imagine the entire mountain as your personal park."
     },
     {
       "id": "9",
@@ -138,7 +147,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-women-twin-sister.webp",
-      "price": "50"
+      "price": "50",
+      "description": "A women's snowboard with directional twin geometry, designed for those who want a board that can handle any slope with freestyle elements. Imagine the entire mountain as your personal park."
     },
     {
       "id": "10",
@@ -152,7 +162,8 @@
       "flex": "7",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/yes-halldor.webp",
-      "price": "45"
+      "price": "45",
+      "description": "This snowboard is a real weapon for technical freestyle on pro lines in the park. The board is designed for confident riders who perform various amplitude tricks on jumps in the park, halfpipe or slopestyle."
     },
     {
       "id": "11",
@@ -166,7 +177,8 @@
       "flex": "7",
       "camber": "camber",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-sensor.webp",
-      "price": "40"
+      "price": "40",
+      "description": "The NIDECKER Sensor Pro is a favorite park-breaking weapon for riders like Mons Roisland and Craig McMorris. It's equally at home in slopestyle competitions as it is honing tricks on the street."
     },
     {
       "id": "12",
@@ -180,7 +192,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-beta.webp",
-      "price": "50"
+      "price": "50",
+      "description": "The board is suitable for fans of active riding in the forest and deep snow. The shape is ideal for riding on natural terrain outside the marked trails, and the nose and tail profile are inspired by the evolution of the animal world for maximum connection with the water (snow) element."
     },
     {
       "id": "13",
@@ -194,7 +207,8 @@
       "flex": "7",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/gnu-gorp-split.webp",
-      "price": "40"
+      "price": "40",
+      "description": "This splitboard will open the world of backcountry for you. This board combines freeride and freestyle styles for true fans of active riding and riders looking for their own unique spots. The board is perfect for any type of terrain, including high drops."
     },
     {
       "id": "14",
@@ -208,7 +222,8 @@
       "flex": "7",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/burton-ft-strt-cht-spt.webp",
-      "price": "60"
+      "price": "60",
+      "description": "The splitboard is designed for freeride riding. Inspired by the hard-hitting style of Burton rider Danny Davis, the Straight Chuter is built for speed, stability and riding aggressive terrain that others can't."
     },
     {
       "id": "15",
@@ -222,7 +237,8 @@
       "flex": "9",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp",
-      "price": "40"
+      "price": "40",
+      "description": "The surf-inspired Mosquito is the shortest model in the NIDECKER lineup. Whether it's January tree lines, icy slopes or spring slush, its compact silhouette combined with an aggressive sidecut will help you make quick turns."
     },
     {
       "id": "16",
@@ -236,7 +252,8 @@
       "flex": "9",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/nidecker-mosquito.webp",
-      "price": "40"
+      "price": "40",
+      "description": "The surf-inspired Mosquito is the shortest model in the NIDECKER lineup. Whether it's January tree lines, icy slopes or spring slush, its compact silhouette combined with an aggressive sidecut will help you make quick turns."
     },
     {
       "id": "17",
@@ -250,7 +267,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp",
-      "price": "55"
+      "price": "55",
+      "description": "The HEAD True Snowboard is a versatile beginner board. The new hybrid camber design allows you to go from connecting turns on the learner slope to racking up spins in the snowboard park with ease."
     },
     {
       "id": "18",
@@ -264,7 +282,8 @@
       "flex": "5",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/head-true.webp",
-      "price": "55"
+      "price": "55",
+      "description": "The HEAD True Snowboard is a versatile beginner board. The new hybrid camber design allows you to go from connecting turns on the learner slope to racking up spins in the snowboard park with ease."
     },
     {
       "id": "19",
@@ -278,7 +297,8 @@
       "flex": "4",
       "camber": "hybrid",
       "image": "https://bonduelle85.github.io/wdd231/glide-and-ride/data/boards-images/jones-prodigy.webp",
-      "price": "20"
+      "price": "20",
+      "description": "A versatile board for kids. Featuring the same premium materials and features as the adult Jones models, it offers fast-learning young riders a solid foundation to build on."
     }
   ]
 }

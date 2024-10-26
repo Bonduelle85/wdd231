@@ -17,13 +17,13 @@
   --accent6-color: #41e1fa;
   --text-color: #0943a1;
   --header-footer-text-color: #dde2eb;
-  --burger-color: #353535;
+  --burger-color: #383838;
   --white-color: #ffffff;
   --card-border-color: #010f25;
   --calendar-background-color: #a499c3;
   --calendar-date-hover-color: #505050;
   --calendar-today-color: #eb9921;
-  --social-svg-color: #353535;
+  --social-svg-color: #383838;
 
   --required: rgb(247, 43, 43);
   --focus: rgb(37, 37, 37);
@@ -106,7 +106,7 @@ picture img {
   transform: translateY(0) rotate(45deg);
 }
 .main-nav li a.active {
-  border: 2px solid var(--burger-color);
+  border: 3px solid var(--burger-color);
   padding: 10px;
   border-radius: var(--border-radius);
 }
@@ -223,9 +223,11 @@ picture img {
 }
 .boards-section-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2px;
+  padding-inline: 8px;
+  gap: 10px;
 }
 .nav-item {
   padding: 8px;
@@ -233,10 +235,11 @@ picture img {
   border: 2px solid var(--card-border-color);
   background-color: var(--accent5-color);
   cursor: pointer;
+  white-space: nowrap;
   transition: transform 0.3s ease;
 }
 .nav-item:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .nav-item:active {
   background-color: var(--accent1-color);

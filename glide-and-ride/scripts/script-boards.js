@@ -83,7 +83,7 @@ function displayBoards(boards) {
   document.querySelector(".boards-section-container").innerHTML = ""
   boards.forEach((board) => {
     document.querySelector(".boards-section-container").innerHTML += `
-    <div class="board-card">
+    <div id="${board.id}" class="board-card">
         <p>${board.brand} ${board.name}</p><hr>
         <div class="board-card-info">
           <img class="board-card-img" src="${board.image}" alt="Image of ${board.name}" loading="lazy" width="300" height="400">
@@ -131,10 +131,33 @@ if (!lastVisit) {
 }
 localStorage.setItem("lastVisit", now);
 
+// Dialog
 document.querySelector(".boards-section-container").addEventListener("click", function (e) {
-  let targetItem = e.target;
-  if (targetItem.closest(".board-card")) {
-    let targetContent = targetItem.textContent;
-    
+  let boardCard = e.target.closest(".board-card");
+  if (boardCard) {
+    let boardCardId = boardCard.id;
+    let board = boards.find( board => board.id === boardCardId )
+    console.log(board)
+    showBoardCardDialog(board);
   }
 });
+
+const boardCardDialog = document.querySelector("#board-card-dialog");
+
+function showBoardCardDialog(board) {
+  
+  boardCardDialog.innerHTML = `
+    <h3>${board.brand} ${board.name}</h3>
+    <p>Size: ${board.size}</p>
+    <br>
+    <p>Description: ${board.description}</p>
+    <br>    
+    <p>Price: ${board.price}</p>
+    <button id="dialog-close" type="reset">Close</button>
+  `;
+  let closeDialogButton = document.querySelector("#dialog-close");
+  closeDialogButton.addEventListener("click", () => {
+    boardCardDialog.close();
+  });
+  boardCardDialog.showModal();
+}
