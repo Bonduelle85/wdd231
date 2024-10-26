@@ -130,7 +130,6 @@ picture img {
 /* Index - Hero */
 .hero-calendar-container {
   background-color: var(--secondary-color);
-  min-height: 70vh;
 }
 .hero-calendar-container img {
   width: 100%;
