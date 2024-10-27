@@ -235,10 +235,6 @@ picture img {
 .nav-item:hover {
   transform: scale(1.1);
 }
-.nav-item:active {
-  background-color: var(--accent1-color);
-  border: 5px solid var(--card-border-color);
-}
 .nav-item.current {
   background-color: var(--accent1-color);
   border: 3px solid var(--card-border-color);
