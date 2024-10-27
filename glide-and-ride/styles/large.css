@@ -259,7 +259,8 @@ picture img {
 }
 .board-card-info-details {
   text-align: start;
-  width: 300px;
+  text-transform: capitalize;
+  width: 310px;
 }
 /* Dialog */
 #board-card-dialog {
